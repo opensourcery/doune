@@ -1,3 +1,5 @@
+// $Id$
+
 /**
  * Autofills search box with 'Search this site' when empty
  * and clears 'Search this site' when focused
