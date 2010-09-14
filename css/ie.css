@@ -46,6 +46,6 @@ tr.odd td {
 /*
  * Markup free clearing
  */
-* html .clearfix {
+.clearfix {
   zoom: 1;
 }

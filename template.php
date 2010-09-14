@@ -64,7 +64,6 @@ function doune_preprocess_node(&$vars, $hook) {
  */
 /* -- Delete this line if you want to use this function
 function doune_preprocess_comment(&$vars, $hook) {
-  $vars['sample_variable'] = t('Lorem ipsum.');
 }
 // */
 
