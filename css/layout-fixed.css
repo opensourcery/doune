@@ -52,7 +52,7 @@ body {
 }
 
 .region-header {
-  clear: both; /* Clear the logo */
+  float: right;
 }
 
 /*
