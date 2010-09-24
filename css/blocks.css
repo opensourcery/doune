@@ -97,11 +97,28 @@
 }
 
 /* Box editing */
-.boxes-box-editing {
-  position: absolute;
-  background-color: #fff;
-  border: solid 2px black;
-  padding: 10px;
-  z-index: 99;
-  float: left;
+.boxes-box {
+  position: relative;
 }
+.boxes-box-controls {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #FFF;
+  border: 1px solid #DDD;
+  font-size: 8px;
+  z-index: 99;
+}
+.boxes-box-controls ul.links {
+  line-height: 9px;
+  margin: 0;
+  padding: 0;
+}
+.boxes-box-controls ul.links li { padding: 0; }
+.boxes-box-controls ul.links li a { padding: 0 2px; }
+.boxes-box-controls ul.links li a:link { color: #003366; }
+.boxes-box-controls ul.links li a:hover {
+  background-color: #003366;
+  color: white;
+}
+
