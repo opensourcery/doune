@@ -102,16 +102,17 @@ caption     { background: #eee; }
 .top        { margin-top:0; padding-top:0; }
 .bottom     { margin-bottom:0; padding-bottom:0; }
 
-
+/* Fieldsets
 -------------------------------------------------------------- */
 
-label       { font-weight: bold; }
 fieldset    { padding: 0.75em 0 0 0; margin: 0 0 1.5em 0; }
-legend      { font-weight: bold; font-size:1.2em; margin: 0; padding: 15px 0 0 0; color: #1b4298;}
+legend      { font-weight: bold; font-size:1.2em; margin: 0; }
 
 
 /* Form fields
 -------------------------------------------------------------- */
+
+label       { font-weight: bold; }
 
 input[type=text], input[type=password],
 input.text, input.title,
