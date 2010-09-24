@@ -79,10 +79,10 @@ html.js fieldset.collapsed legend {
 }
 html.js fieldset.collapsible legend a {
   padding-left: 15px; /* LTR */
-  background: url(../../misc/menu-expanded.png) 5px 75% no-repeat; /* LTR */
+  background: url(../images/drupal/menu-expanded.png) 5px 75% no-repeat; /* LTR */
 }
 html.js fieldset.collapsed legend a {
-  background-image: url(../../misc/menu-collapsed.png); /* LTR */
+  background-image: url(../images/drupal/menu-collapsed.png); /* LTR */
   background-position: 5px 50%; /* LTR */
 }
 /* Note: IE-only fix due to '* html' (breaks Konqueror otherwise). */
@@ -211,7 +211,7 @@ dl.multiselect dd.a .form-item { width:8em; }
 /**
  * Animated throbber
  */
-html.js input.throbbing { background:transparent url(drupal/throbber.gif) 100% 50% no-repeat; }
+html.js input.throbbing { background:transparent url(../images/drupal/throbber.gif) 100% 50% no-repeat; }
 
 /**
  * Resizable text areas
@@ -248,7 +248,7 @@ a.tabledrag-handle:hover { text-decoration:none; }
 a.tabledrag-handle .handle {
   height:20px;
   width:20px;
-  background:url(drupal/draggable.png) 0px 0px no-repeat;
+  background:url(../images/drupal/draggable.png) 0px 0px no-repeat;
   }
 
 a.tabledrag-handle-hover .handle { background-position:0px -20px; }
@@ -259,9 +259,9 @@ div.indentation {
   float:left; /* LTR */
   }
 
-div.tree-child { background:url(drupal/tree.png) no-repeat 10px 50%; }
-div.tree-child-last { background:url(drupal/tree-bottom.png) no-repeat 10px 50%; }
-div.tree-child-horizontal { background:url(drupal/tree.png) no-repeat -10px 50%; }
+div.tree-child { background:url(../images/drupal/tree.png) no-repeat 10px 50%; }
+div.tree-child-last { background:url(../images/drupal/tree-bottom.png) no-repeat 10px 50%; }
+div.tree-child-horizontal { background:url(../images/drupal/tree.png) no-repeat -10px 50%; }
 
 /**
  * Teaser splitter
@@ -293,7 +293,7 @@ html.js .no-js { display:none; }
 .progress { font-weight:bold; }
 
 .progress .bar {
-  background:#fff url(drupal/progress.gif);
+  background:#fff url(../images/drupal/progress.gif);
   border:1px solid #035;
   height:18px;
   }
@@ -311,7 +311,7 @@ html.js .no-js { display:none; }
 .ahah-progress .throbber {
   width:20px;
   height:20px;
-  background:transparent url(drupal/throbber.gif) 50% 50% no-repeat;
+  background:transparent url(../images/drupal/throbber.gif) 50% 50% no-repeat;
   float:left;
   }
 
