@@ -34,7 +34,6 @@ h4 img, h5 img, h6 img {
 /* Text elements
 -------------------------------------------------------------- */
 
-p           { margin: 0 0 1.5em; }
 p img.left  { float: left; margin: 1.5em 1.5em 1.5em 0; padding: 0; }
 p img.right { float: right; margin: 1.5em 0 1.5em 1.5em; }
 
@@ -105,8 +104,10 @@ caption     { background: #eee; }
 /* Fieldsets
 -------------------------------------------------------------- */
 
-fieldset    { padding: 0.75em 0 0 0; margin: 0 0 1.5em 0; }
-legend      { font-weight: bold; font-size:1.2em; margin: 0; }
+/* Normal padding is 15px; make up for the missing 1px caused by the fieldset's border collapsing */
+html.js body fieldset.collapsed legend a { padding-left: 16px; }
+fieldset    { border-style: solid; border-width: 1px; border-color: #CCC; }
+legend      { font-weight: bold; font-size:1.2em; margin: 0; padding: 0 .5em 0 .3em; }
 
 
 /* Form fields

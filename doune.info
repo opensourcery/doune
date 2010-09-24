@@ -39,6 +39,9 @@ stylesheets[all][] = "tracker.css"
 stylesheets[all][] = "update.css"
 stylesheets[all][] = "user.css"
 
+; Drupal essential styles (adapted from tao)
+stylesheets[screen][] = css/drupal.css
+
 ; Standard Zen subtheme stylesheets
 stylesheets[all][]   = css/html-reset.css
 stylesheets[all][]   = css/wireframes.css
@@ -57,10 +60,9 @@ stylesheets[all][]   = css/comments.css
 stylesheets[all][]   = css/forms.css
 stylesheets[all][]   = css/fields.css
 stylesheets[print][] = css/print.css
-stylesheets[all][]   = css/type.css
 
-; Drupal essential styles (from tao)
-stylesheets[screen][] = css/drupal.css
+; Custom styles
+stylesheets[all][]   = css/type.css
 
 ; stylesheets[handheld][] = css/mobile.css
 ; stylesheets[only screen and (max-device-width: 480px)][] = css/iphone.css
