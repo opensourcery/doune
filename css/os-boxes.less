@@ -15,7 +15,6 @@
   z-index: 99;
 }
 .boxes-box-controls ul.links {
-  line-height: 9px;
   margin: 0;
   padding: 0;
 }
@@ -30,10 +29,10 @@
       color: white;
     }
   }
-  li.cancel { $link-button (-6px); }
+  li.cancel {
+    border: none;
+    a { $link-button; }
+  }
 }
 
-
-#boxes-box-form {
-  $clearfix;
-}
+#boxes-box-form { $clearfix; }

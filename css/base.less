@@ -97,41 +97,43 @@ $element-invisible {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-// Apply this mixin to an element containing a link to make
-// it look and act very similarly to a button/submit.
+/**
+ * Apply $link-button to a link to make it look and act like a button/submit.
+ */
 @button-color: #ECE7E2;
 @button-highlight-color: #F3F0ED;
 
-$link-button (@top) {
+$link-button (@top: 0px) {
+  $rounded-corners-all (3px);
+  $box-shadow (0px; 1px; 3px);
+
   background-color: @button-color;
   border: 1px solid #DEDEDE;
   border-top: 1px solid #EEE;
   border-left: 1px solid #EEE;
   color: #333;
+  display: block;
+  float: left;
   font-size: 12px;
-  padding: 0;
+  margin: 0.5em;
+  outline: none;
+  padding: 3px 14px;
   position: relative;
   top: @top;
 
-  $rounded-corners-all(3px);
-  $box-shadow (0; 1px; 3px);
-
-  :hover, :focus { background-color: @button-highlight-color; }
-
-  :active:hover {
-    top: @top + 1px;
-    $box-shadow (0; 0; 2px);
-  }
-  a {
-    display: block;
-    outline: none;
-    padding: 5px 14px;
-  }
-  a, a:link, a:visited, a:hover, a:active {
-    background-color: transparent;
+  :link, :visited, :hover, :active {
     color: #333;
     text-decoration: none;
   }
-}
+  :hover, :focus { background-color: @button-highlight-color; }
 
+  :active {
+    top: @top + 1px;
+    // for some reason it seems that using the box-shadow property here
+    // (whether by way of a mixin or not) triggers some LESS bug that causes
+    // each of the *box-shadow declarations to be the same as above. Grrr.
+    -webkit-box-shadow: 0 0 2px #000;
+    -moz-box-shadow: 0 0 2px #000;
+  }
+}
 
