@@ -155,4 +155,22 @@ input[type=submit] {
   padding: 6px 10px 3px 7px;   /* IE7 */
 }
 
+/* Form/input controls */
+input[type="submit"], button {
+  background-color: @button-color;
+  color: #333;
+  padding: 3px 12px;
+  $chipped-corners;
+  $box-shadow (0; 1px; 3px);
 
+  :hover, :focus { background-color: @button-highlight-color; }
+  :active:hover {
+    position: relative;
+    top: 1px;
+    $box-shadow (0; 0; 2px);
+  }
+}
+
+/* Vertical tabs */
+div.vertical-tabs ul.vertical-tabs-list a { color: #666; }
+div.vertical-tabs ul.vertical-tabs-list .selected a { color: #333; }

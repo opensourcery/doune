@@ -11,7 +11,6 @@
   right: 0;
   bottom: 0;
   background-color: #FFF;
-  border: 1px solid #DDD;
   font-size: 8px;
   z-index: 99;
 }
@@ -20,13 +19,20 @@
   margin: 0;
   padding: 0;
 }
-.boxes-box-controls ul.links li.edit { padding: 0; }
-.boxes-box-controls ul.links li.edit a { padding: 0 2px; }
-.boxes-box-controls ul.links li.edit a:link { color: #003366; }
-.boxes-box-controls ul.links li.edit a:hover {
-  background-color: #003366;
-  color: white;
+.boxes-box-controls ul.links {
+  li { border: 1px solid #DDD; }
+  li.edit {
+    padding: 0;
+    a { padding: 0 2px; }
+    a:link { color: #003366; }
+    a:hover {
+      background-color: #003366;
+      color: white;
+    }
+  }
+  li.cancel { $link-button (-6px); }
 }
+
 
 #boxes-box-form {
   $clearfix;
