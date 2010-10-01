@@ -63,7 +63,7 @@ stylesheets[print][] = css/print.css
 
 ; Custom styles
 stylesheets[all][]   = css/basics.less
-stylesheets[all][]   = css/boxes.less
+stylesheets[all][]   = css/os-boxes.less
 
 ; stylesheets[handheld][] = css/mobile.css
 ; stylesheets[only screen and (max-device-width: 480px)][] = css/iphone.css
