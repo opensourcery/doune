@@ -1,0 +1,33 @@
+/** OS stuff **/
+
+@import "base.less";
+
+/* Box editing */
+.boxes-box {
+  position: relative;
+}
+.boxes-box-controls {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #FFF;
+  border: 1px solid #DDD;
+  font-size: 8px;
+  z-index: 99;
+}
+.boxes-box-controls ul.links {
+  line-height: 9px;
+  margin: 0;
+  padding: 0;
+}
+.boxes-box-controls ul.links li.edit { padding: 0; }
+.boxes-box-controls ul.links li.edit a { padding: 0 2px; }
+.boxes-box-controls ul.links li.edit a:link { color: #003366; }
+.boxes-box-controls ul.links li.edit a:hover {
+  background-color: #003366;
+  color: white;
+}
+
+#boxes-box-form {
+  $clearfix;
+}

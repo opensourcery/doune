@@ -1,35 +1,26 @@
 /* $Id$ */
+
+@import "base.less";
+
 /* --------------------------------------------------------------
-
-   typography.css
-   * Sets up some sensible default typography.
-
+     Basic styles.
 -------------------------------------------------------------- */
 
-/* Default font settings.
-   The font-size percentage is of 16px. (0.75 * 16px = 12px) */
+/* Default font and colors. */
 
-html {font-size:100.01%;}
-body {font-size:90%;color:#222;background:#fff;font-family:"Helvetica Neue", Arial, Verdana, sans-serif;}
-
+body {
+  color: #333;
+  background: #fff;
+  font-family: "Helvetica Neue", Arial, Verdana, sans-serif;
+}
 
 /* Headings
 -------------------------------------------------------------- */
-
-h1,h2,h3,h4,h5,h6 { font-weight: normal; color: #111; }
-
-h1, h1.title { font-size: 3em; line-height: 1; margin-bottom: 0.5em; letter-spacing: 0.025em; }
-h2, h2.title { font-size: 2.5em; margin-bottom: 0.75em; }
-h3 { font-size: 2em; line-height: 1; margin-bottom: 1em; letter-spacing: 0.025em;}
-h4 { font-size: 1.2em; line-height: 1.25; margin-bottom: 1.25em; }
-h5 { font-size: 1em; font-weight: bold; margin-bottom: 1.5em; }
-h6 { font-size: 1em; font-weight: bold; }
 
 h1 img, h2 img, h3 img,
 h4 img, h5 img, h6 img {
   margin: 0;
 }
-
 
 /* Text elements
 -------------------------------------------------------------- */
@@ -59,22 +50,13 @@ pre,code,tt { font: 1em 'andale mono', 'lucida console', monospace; line-height:
 /* Lists
 -------------------------------------------------------------- */
 
-li ul,
-li ol       { margin: 0; }
-ul, ol      { margin: 0 1.5em 1.5em 0; padding-left: 3.333em; }
-
-ul          { list-style-type: disc; }
-ol          { list-style-type: decimal; }
-
 dl          { margin: 0 0 1.5em 0; }
 dl dt       { font-weight: bold; }
-dd          { margin-left: 1.5em;}
 
 
 /* Tables
 -------------------------------------------------------------- */
 
-table       { margin-bottom: 1.4em; width:100%; }
 th          { font-weight: bold; }
 thead th    { background: #f2f2f2; padding: 6px; color: #333; border-bottom: 2px solid #000;}
 th,td,caption { padding: 4px 10px 4px 5px; }
@@ -113,8 +95,6 @@ legend      { font-weight: bold; font-size:1.2em; margin: 0; padding: 0 .5em 0 .
 /* Form fields
 -------------------------------------------------------------- */
 
-label       { font-weight: bold; }
-
 input[type=text], input[type=password],
 input.text, input.title,
 textarea, select {
@@ -131,7 +111,7 @@ input[type=text], input[type=password],
 input.text, input.title,
 textarea, select {
   margin:0.5em 0;
-	padding: 3px 1px;
+  padding: 3px 1px;
 }
 
 input.text,
@@ -144,29 +124,24 @@ input.checkbox, input.radio {
   position:relative; top:.25em;
 }
 
-select {
-	clear: left;
-}
-
 form.inline { line-height:3; }
 form.inline p { margin-bottom:0; }
 
 input[type=submit], button {
-  display:block;
-  float:left;
-  margin: 0.5em 0.5em 0.7em 0;
+  display: block;
+  float: left;
+  margin: 0.5em;
 
   border:1px solid #dedede;
   border-top:1px solid #eee;
   border-left:1px solid #eee;
 
-  font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;
-  font-size:100%;
-  line-height:130%;
-  text-decoration:none;
-  color:#FFFFFF;
-  cursor:pointer;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  text-decoration: none;
+  cursor: pointer;
 }
+/* Do we need these styles for cross-browser compatibility? */
 input[type=submit] {
   width:auto;
   overflow:visible;
