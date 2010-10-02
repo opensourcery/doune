@@ -11,6 +11,11 @@ $box-shadow (@xoff: 0px; @yoff: 0px; @radius: 3px; @shadow: #000000) {
   -moz-box-shadow: @xoff @yoff @radius @shadow;
   box-shadow: @xoff @yoff @radius @shadow;
 }
+$no-box-shadow {
+  -webkit-box-shadow: 0 0 0;
+  -moz-box-shadow: 0 0 0;
+  box-shadow: 0 0 0;
+}
 $text-shadow (@xoff: 0px; @yoff: 0px; @radius: 3px; @shadow: #000000) {
   text-shadow: @xoff @yoff @radius @shadow;
   filter: dropshadow(color=@shadow, offx=@xoff, offy=@yoff);
@@ -24,9 +29,13 @@ $rounded-corners (@top-left: 6px; @top-right: 6px; @bottom-right: 6px; @bottom-l
   -webkit-border-radius: @top-left @top-right @bottom-right @bottom-left;
   border-radius: @top-left @top-right @bottom-right @bottom-left;
 }
-
 $rounded-corners-all (@radius: 6px) {
   $rounded-corners(@radius; @radius; @radius; @radius);
+}
+$no-rounded-corners {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
 }
 
 $chipped-corners { $rounded-corners(3px; 3px; 3px; 3px); }
