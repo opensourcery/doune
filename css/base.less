@@ -5,6 +5,14 @@
  * selector on its own. In other words, $ cuts out CSS bloat.
  */
 
+/* Inline submit buttons need a little love to line up right. */
+$inline-submit () {
+  display: inline;
+  float: none;
+  position: relative;
+  top: -1px;
+}
+
 /* Shadows */
 $box-shadow (@xoff: 0px; @yoff: 0px; @radius: 3px; @shadow: #000000) {
   -webkit-box-shadow: @xoff @yoff @radius @shadow;
