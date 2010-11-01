@@ -29,6 +29,14 @@ $rounded-corners (@top-left: 6px; @top-right: 6px; @bottom-right: 6px; @bottom-l
   -webkit-border-radius: @top-left @top-right @bottom-right @bottom-left;
   border-radius: @top-left @top-right @bottom-right @bottom-left;
 }
+$rounded-corners-top (@radius: 6px) {
+  -moz-border-radius-topleft: @radius;
+  -moz-border-radius-topright: @radius;
+  -webkit-border-top-right-radius: @radius;
+  -webkit-border-top-left-radius: @radius;
+  border-top-left-radius: @radius;
+  border-top-right-radius: @radius;
+}
 $rounded-corners-all (@radius: 6px) {
   $rounded-corners(@radius; @radius; @radius; @radius);
 }
