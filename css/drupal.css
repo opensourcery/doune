@@ -91,11 +91,11 @@ html.js input.form-autocomplete {
   background-image: url(../images/drupal/throbber.gif);
   background-repeat: no-repeat;
   /* Background position changed from core Drupal */
-  background-position: 100% 7px; /* LTR */
+  background-position: 100% 2px; /* LTR */
 }
 html.js input.throbbing {
   /* Background position changed from core Drupal */
-  background-position: 100% -13px; /* LTR */
+  background-position: 100% -18px; /* LTR */
 }
 
 /*

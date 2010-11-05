@@ -180,6 +180,17 @@ input[type="submit"], button {
   $inline-submit;
 }
 
+/* Make default Drupal core autocomplete styling work */
+body #autocomplete {
+  background-color: #FFF;
+  border: 1px solid #DEDEDE;
+  /* Make up for our skinny borders--core is hardcoded to make the width of this element 4px less than width of input */
+  padding-right: 2px;
+  ul { padding: 1px 3px; }
+}
+input.form-autocomplete { margin: 0; padding: 2px 1px; }
+tr.draggable td .form-item { margin: 0; }
+
 /* Vertical tabs */
 div.vertical-tabs ul.vertical-tabs-list a { color: #666; }
 div.vertical-tabs ul.vertical-tabs-list .selected a { color: #333; }
