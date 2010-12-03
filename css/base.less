@@ -5,19 +5,12 @@
  * selector on its own. In other words, $ cuts out CSS bloat.
  */
 
-/* Inline submit buttons need a little love to line up right. */
-$inline-submit () {
-  display: inline;
-  float: none;
-  position: relative;
-  top: -1px;
-}
-
 /* Shadows */
 $box-shadow (@xoff: 0px; @yoff: 0px; @radius: 3px; @shadow: #000000) {
   -webkit-box-shadow: @xoff @yoff @radius @shadow;
   -moz-box-shadow: @xoff @yoff @radius @shadow;
   box-shadow: @xoff @yoff @radius @shadow;
+  behavior: url('../docs/PIE.htc');
 }
 $no-box-shadow {
   -webkit-box-shadow: 0 0 0;
@@ -27,6 +20,7 @@ $no-box-shadow {
 $text-shadow (@xoff: 0px; @yoff: 0px; @radius: 3px; @shadow: #000000) {
   text-shadow: @xoff @yoff @radius @shadow;
   filter: dropshadow(color=@shadow, offx=@xoff, offy=@yoff);
+  behavior: url('../docs/PIE.htc');
 }
 
 /*
@@ -36,27 +30,51 @@ $rounded-corners (@top-left: 6px; @top-right: 6px; @bottom-right: 6px; @bottom-l
   -moz-border-radius: @top-left @top-right @bottom-right @bottom-left;
   -webkit-border-radius: @top-left @top-right @bottom-right @bottom-left;
   border-radius: @top-left @top-right @bottom-right @bottom-left;
-}
-$rounded-corners-top (@radius: 6px) {
-  -moz-border-radius-topleft: @radius;
-  -moz-border-radius-topright: @radius;
-  -webkit-border-top-right-radius: @radius;
-  -webkit-border-top-left-radius: @radius;
-  border-top-left-radius: @radius;
-  border-top-right-radius: @radius;
+  behavior: url('../docs/PIE.htc');
 }
 $rounded-corners-all (@radius: 6px) {
   $rounded-corners(@radius; @radius; @radius; @radius);
+}
+$rounded-corners-top-left (@radius: 6px) {
+  -moz-border-radius-topleft: @radius;
+  -webkit-border-top-left-radius: @radius;
+  border-top-left-radius: @radius;
+  behavior: url('../docs/PIE.htc');
+}
+$rounded-corners-top-right (@radius: 6px) {
+  -moz-border-radius-topright: @radius;
+  -webkit-border-top-right-radius: @radius;
+  border-top-right-radius: @radius;
+  behavior: url('../docs/PIE.htc');
+}
+$rounded-corners-bottom-left (@radius: 6px) {
+  -moz-border-radius-bottomleft: @radius;
+  -webkit-border-bottom-left-radius: @radius;
+  border-bottom-left-radius: @radius;
+  behavior: url('../docs/PIE.htc');
+}
+$rounded-corners-bottom-right (@radius: 6px) {
+  -moz-border-radius-bottomright: @radius;
+  -webkit-border-bottom-right-radius: @radius;
+  border-bottom-right-radius: @radius;
+  behavior: url('../docs/PIE.htc');
+}
+$rounded-corners-top (@radius: 6px) {
+  $rounded-corners-top-left (@radius);
+  $rounded-corners-top-right (@radius);
+}
+$rounded-corners-bottom (@radius: 6px) {
+  $rounded-corners-bottom-left (@radius);
+  $rounded-corners-bottom-right (@radius);
 }
 $no-rounded-corners {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0;
 }
-
 $chipped-corners { $rounded-corners(3px; 3px; 3px; 3px); }
-$chipped-corners-left { $rounded-corners-left(3px; 0; 0; 3px); }
-$chipped-corners-right { $rounded-corners-right(0; 3px; 3px; 0); }
+$chipped-corners-left { $rounded-corners(3px; 0; 0; 3px); }
+$chipped-corners-right { $rounded-corners(0; 3px; 3px; 0); }
 
 /*
  * Gradients
@@ -64,18 +82,22 @@ $chipped-corners-right { $rounded-corners-right(0; 3px; 3px; 0); }
 $vertical-gradient-primary {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0.33, @secondary), color-stop(0.66, @secondary-muted));
   background: -moz-linear-gradient(center bottom, @secondary 33%, @secondary-muted 66%);
+  behavior: url('../docs/PIE.htc');
 }
 $vertical-gradient-primary-reversed {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0.33, @secondary-muted), color-stop(0.66, @secondary));
   background: -moz-linear-gradient(center bottom, @secondary-muted 33%, @secondary 66%);
+  behavior: url('../docs/PIE.htc');
 }
 $vertical-gradient-secondary {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0.33, @primary-muted), color-stop(0.66, @primary));
   background: -moz-linear-gradient(center bottom, @primary-muted 33%, @primary 66%);
+  behavior: url('../docs/PIE.htc');
 }
 $vertical-gradient-secondary-reversed {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0.33, @primary), color-stop(0.66, @primary-muted));
   background: -moz-linear-gradient(center bottom, @primary 33%, @primary-muted 66%);
+  behavior: url('../docs/PIE.htc');
 }
 
 /*
@@ -159,6 +181,7 @@ $link-button (@top: 0px) {
     // each of the *box-shadow declarations to be the same as above. Grrr.
     -webkit-box-shadow: 0 0 2px #000;
     -moz-box-shadow: 0 0 2px #000;
+    behavior: url('../docs/PIE.htc');
   }
 }
 
