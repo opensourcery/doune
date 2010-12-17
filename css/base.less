@@ -36,36 +36,22 @@ $rounded-corners-all (@radius: 6px) {
   $rounded-corners(@radius; @radius; @radius; @radius);
 }
 $rounded-corners-top-left (@radius: 6px) {
-  -moz-border-radius-topleft: @radius;
-  -webkit-border-top-left-radius: @radius;
-  border-top-left-radius: @radius;
-  behavior: url('../docs/PIE.htc');
+  $rounded-corners(@radius; 0; 0; 0);
 }
 $rounded-corners-top-right (@radius: 6px) {
-  -moz-border-radius-topright: @radius;
-  -webkit-border-top-right-radius: @radius;
-  border-top-right-radius: @radius;
-  behavior: url('../docs/PIE.htc');
+  $rounded-corners(0; @radius; 0; 0);
 }
 $rounded-corners-bottom-left (@radius: 6px) {
-  -moz-border-radius-bottomleft: @radius;
-  -webkit-border-bottom-left-radius: @radius;
-  border-bottom-left-radius: @radius;
-  behavior: url('../docs/PIE.htc');
+  $rounded-corners(0; 0; 0; @radius);
 }
 $rounded-corners-bottom-right (@radius: 6px) {
-  -moz-border-radius-bottomright: @radius;
-  -webkit-border-bottom-right-radius: @radius;
-  border-bottom-right-radius: @radius;
-  behavior: url('../docs/PIE.htc');
+  $rounded-corners(0; 0; @radius; 0);
 }
 $rounded-corners-top (@radius: 6px) {
-  $rounded-corners-top-left (@radius);
-  $rounded-corners-top-right (@radius);
+  $rounded-corners(@radius; @radius; 0; 0);
 }
 $rounded-corners-bottom (@radius: 6px) {
-  $rounded-corners-bottom-left (@radius);
-  $rounded-corners-bottom-right (@radius);
+  $rounded-corners(0; 0; @radius; @radius);
 }
 $no-rounded-corners {
   -moz-border-radius: 0;
