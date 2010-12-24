@@ -2,17 +2,22 @@
 
 /**
  * Autofills search box with 'Search this site' when empty
- * and clears 'Search this site' when focused
+ * and clears 'Search this site' when focused.
  */
 Drupal.behaviors.searchFormText = function(context) {
-  $('#search-box .form-text').val('').bind( 'load blur', function() {
-    if( $(this).val() == '' ) {
-      $(this).val(Drupal.t('Search this site'));
+  var searchText = Drupal.t('Search this site'),
+      $input = $('.block-search .form-text'),
+      faded = '#999',
+      color = $input.css('color');
+
+  $input.val('').bind('load blur', function() {
+    if ($(this).val() == '' ) {
+      $(this).val(searchText).css('color', faded);
     }
   });
-  $('#search-box .form-text').val('Search this site').focus( function() {
-    if( $(this).val() == 'Search this site' ) {
-      $(this).val('');
+  $input.val(searchText).css('color', faded).focus(function() {
+    if ($(this).val() == searchText) {
+      $(this).val('').css('color', color);
     }
   });
 }
