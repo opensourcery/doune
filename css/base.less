@@ -53,7 +53,13 @@ $rounded-corners-top (@radius: 6px) {
 $rounded-corners-bottom (@radius: 6px) {
   $rounded-corners(0; 0; @radius; @radius);
 }
-$no-rounded-corners {
+$$rounded-corners-left (@radius: 6px) {
+  $rounded-corners(@radius; 0; 0; @radius);
+}
+$rounded-corners-right (@radius: 6px) {
+  $rounded-corners(0; @radius; @radius; 0);
+}
+no-rounded-corners {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0;
@@ -170,4 +176,3 @@ $link-button (@top: 0px) {
     behavior: url('../docs/PIE.htc');
   }
 }
-
