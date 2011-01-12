@@ -58,9 +58,10 @@ dl dt       { font-weight: bold; }
 -------------------------------------------------------------- */
 
 th          { font-weight: bold; }
-thead th    { background: #f2f2f2; padding: 6px; color: #333; border-bottom: 2px solid #000;}
+thead th    { background: @table-header-fill; padding: 6px; color: #333; border-bottom: 2px solid #000;}
 th,td,caption { padding: 4px 10px 4px 5px; }
-tr.even td  { background: #dce8bd; }
+tr td { background: @main-table-fill; }
+tr.even td  { background: @even-table-fill; }
 tfoot       { font-style: italic; }
 caption     { background: #eee; }
 

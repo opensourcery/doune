@@ -5,6 +5,44 @@
  * selector on its own. In other words, $ cuts out CSS bloat.
  */
 
+/* Constants
+ * KEY
+ *-------
+ * tc = text color
+ * bc = background color
+ */
+@link-static-tc: #0058B3;
+@link-hover-tc: #003B78;
+
+@table-header-fill: #f2f2f2;
+@even-table-fill: #f2f2f2;
+@main-table-fill: #ffffff;
+
+
+/* gradient colors */
+@primary: #ccc;
+@primary-muted: #eee;
+@secondary: #006cde;
+@secondary-muted: #0079fa;
+
+/* button colors */
+@button-color: #ECE7E2;
+@button-highlight-color: #F3F0ED;
+
+/* shadows */
+@xoff: 3px;
+@yoff: 3px;
+@shadow: 3px;
+
+/* border radius */
+@radius: 5px;
+@top-right: 5px;
+@bottom-right:5px;
+@top-left: 5px;
+@bottom-left: 5px;
+
+
+
 /* Shadows */
 $box-shadow (@xoff: 0px; @yoff: 0px; @radius: 3px; @shadow: #000000) {
   -webkit-box-shadow: @xoff @yoff @radius @shadow;
@@ -139,8 +177,6 @@ $element-invisible {
 /**
  * Apply $link-button to a link to make it look and act like a button/submit.
  */
-@button-color: #ECE7E2;
-@button-highlight-color: #F3F0ED;
 
 $link-button (@top: 0px) {
   $rounded-corners-all (3px);
