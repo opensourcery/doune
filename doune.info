@@ -44,7 +44,6 @@ stylesheets[screen][] = css/drupal.css
 
 ; Standard Zen subtheme stylesheets
 stylesheets[all][]   = css/html-reset.css
-stylesheets[all][]   = css/wireframes.css
 stylesheets[all][]   = css/layout-fixed.css
 stylesheets[all][]   = css/page-backgrounds.css
 stylesheets[all][]   = css/tabs.css
@@ -53,17 +52,12 @@ stylesheets[all][]   = css/pages.css
 stylesheets[all][]   = css/block-editing.css
 stylesheets[all][]   = css/blocks.css
 stylesheets[all][]   = css/navigation.css
-stylesheets[all][]   = css/panels-styles.css
 stylesheets[all][]   = css/views-styles.css
 stylesheets[all][]   = css/nodes.css
-stylesheets[all][]   = css/comments.css
 stylesheets[all][]   = css/forms.css
-stylesheets[all][]   = css/fields.css
 stylesheets[print][] = css/print.css
 
 ; Custom styles
-stylesheets[all][]   = css/basics.less
-stylesheets[all][]   = css/os-boxes.less
 
 ; stylesheets[handheld][] = css/mobile.css
 ; stylesheets[only screen and (max-device-width: 480px)][] = css/iphone.css
@@ -103,5 +97,5 @@ settings[zen_breadcrumb_separator] = ' › '
 settings[zen_breadcrumb_home]      = 1
 settings[zen_breadcrumb_trailing]  = 1
 settings[zen_breadcrumb_title]     = 0
-settings[zen_rebuild_registry]     = 1
+settings[zen_rebuild_registry]     = 0
 settings[zen_wireframes]           = 0
