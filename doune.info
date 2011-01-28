@@ -42,29 +42,8 @@ stylesheets[all][] = "user.css"
 ; Drupal essential styles (adapted from tao)
 stylesheets[screen][] = css/drupal.css
 
-; Standard Zen subtheme stylesheets
-stylesheets[all][]   = css/html-reset.css
-stylesheets[all][]   = css/layout-fixed.css
-stylesheets[all][]   = css/page-backgrounds.css
-stylesheets[all][]   = css/tabs.css
-stylesheets[all][]   = css/messages.css
-stylesheets[all][]   = css/pages.css
-stylesheets[all][]   = css/block-editing.css
-stylesheets[all][]   = css/blocks.css
-stylesheets[all][]   = css/navigation.css
-stylesheets[all][]   = css/views-styles.css
-stylesheets[all][]   = css/nodes.css
-stylesheets[all][]   = css/forms.css
-stylesheets[print][] = css/print.css
-
-; Custom styles
-
 ; stylesheets[handheld][] = css/mobile.css
 ; stylesheets[only screen and (max-device-width: 480px)][] = css/iphone.css
-
-; Set the conditional stylesheets that are processed by IE.
-conditional-stylesheets[if IE][all][]       = css/ie.css
-conditional-stylesheets[if lte IE 6][all][] = css/ie6.css
 
 scripts[] = js/search-box-text.js
 
