@@ -166,10 +166,10 @@ input[type="submit"], button {
   padding: 3px 12px;
   $chipped-corners;
   $box-shadow (0; 1px; 3px);
+  position: relative; // For pushdown effect and CSS3PIE compatibility
 
   :hover, :focus { background-color: @button-highlight-color; }
   :active:hover {
-    position: relative;
     top: 1px;
     $box-shadow (0; 0; 2px);
   }
