@@ -5,7 +5,7 @@ description = OpenSourcery base theme.
 screenshot = screenshot.png
 core       = 6.x
 base theme = zen
-version    = 6.x-0.3
+version    = 6.x-2.x-dev
 
 ; From tao: Omit core stylesheets.
 ; Note that several stylesheets are left included because of their non-invasive
