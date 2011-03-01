@@ -1,5 +1,4 @@
 <?php
-// $Id$
 
 /**
  * Implementation of HOOK_theme().
