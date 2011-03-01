@@ -1,4 +1,3 @@
-// $Id$
 
 /**
  * Autofills search box with 'Search this site' when empty
