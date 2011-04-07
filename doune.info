@@ -37,6 +37,7 @@ stylesheets[all][] = "taxonomy.css"
 stylesheets[all][] = "tracker.css"
 stylesheets[all][] = "update.css"
 stylesheets[all][] = "user.css"
+stylesheets[all][] = "formalize/stylesheets/formalize.css"
 
 ; Drupal essential styles (adapted from tao)
 stylesheets[screen][] = css/drupal.css
@@ -45,6 +46,7 @@ stylesheets[screen][] = css/drupal.css
 ; stylesheets[only screen and (max-device-width: 480px)][] = css/iphone.css
 
 scripts[] = js/search-box-text.js
+scripts[] = formalize/javascript/jquery.formalize.js
 
 regions[sidebar_first]  = First sidebar
 regions[sidebar_second] = Second sidebar
