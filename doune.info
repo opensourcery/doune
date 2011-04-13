@@ -1,43 +1,41 @@
-
-name        = Doune
+name = Doune
 description = OpenSourcery base theme.
 screenshot = screenshot.png
-core       = 6.x
+core = 7.x
 base theme = zen
-version    = 6.x-2.x-dev
+version = 7.x-2.x-dev
 
 ; From tao: Omit core stylesheets.
 ; Note that several stylesheets are left included because of their non-invasive
 ; or isolated nature:
 ;
-;   color/color.css
-;   locale/locale.css
+; color/color.css
+; locale/locale.css
 ;
 ; Other functionally critical styles should be reimplemented in `drupal.css`
 ; without styles that compromise the typographical grid or otherwise complicate
 ; subtheming.
 
-stylesheets[all][] = "admin.css"
-stylesheets[all][] = "block.css"
-stylesheets[all][] = "book.css"
-stylesheets[all][] = "comment.css"
-stylesheets[all][] = "dblog.css"
-stylesheets[all][] = "defaults.css"
-stylesheets[all][] = "forum.css"
-stylesheets[all][] = "help.css"
-stylesheets[all][] = "maintenance.css"
-stylesheets[all][] = "node.css"
-stylesheets[all][] = "openid.css"
-stylesheets[all][] = "poll.css"
-stylesheets[all][] = "profile.css"
-stylesheets[all][] = "search.css"
-stylesheets[all][] = "system.css"
-stylesheets[all][] = "system-menus.css"
-stylesheets[all][] = "taxonomy.css"
-stylesheets[all][] = "tracker.css"
-stylesheets[all][] = "update.css"
-stylesheets[all][] = "user.css"
-stylesheets[all][] = "formalize/stylesheets/formalize.css"
+stylesheets[all][] = "css/admin.css"
+stylesheets[all][] = "css/block.css"
+stylesheets[all][] = "css/book.css"
+stylesheets[all][] = "css/comment.css"
+stylesheets[all][] = "css/dblog.css"
+stylesheets[all][] = "css/defaults.css"
+stylesheets[all][] = "css/forum.css"
+stylesheets[all][] = "css/help.css"
+stylesheets[all][] = "css/maintenance.css"
+stylesheets[all][] = "css/node.css"
+stylesheets[all][] = "css/openid.css"
+stylesheets[all][] = "css/poll.css"
+stylesheets[all][] = "css/profile.css"
+stylesheets[all][] = "css/search.css"
+stylesheets[all][] = "css/system.css"
+stylesheets[all][] = "css/system-menus.css"
+stylesheets[all][] = "css/taxonomy.css"
+stylesheets[all][] = "css/tracker.css"
+stylesheets[all][] = "css/update.css"
+stylesheets[all][] = "css/user.css"
 
 ; Drupal essential styles (adapted from tao)
 stylesheets[screen][] = css/drupal.css
@@ -46,18 +44,18 @@ stylesheets[screen][] = css/drupal.css
 ; stylesheets[only screen and (max-device-width: 480px)][] = css/iphone.css
 
 scripts[] = js/search-box-text.js
-scripts[] = formalize/javascript/jquery.formalize.js
 
-regions[sidebar_first]  = First sidebar
+regions[sidebar_first] = First sidebar
 regions[sidebar_second] = Second sidebar
-regions[navigation]     = Navigation bar
-regions[highlight]      = Highlighted content
-regions[content_top]    = Content top
+regions[navigation] = Navigation bar
+regions[highlight] = Highlighted content
+regions[content_top] = Content top
+regions[content] = Content
 regions[content_bottom] = Content bottom
-regions[header]         = Header
-regions[postscript]     = Postscript
-regions[footer]         = Footer
-regions[page_closure]   = Page closure
+regions[header] = Header
+regions[postscript] = Postscript
+regions[footer] = Footer
+regions[page_closure] = Page closure
 
 features[] = logo
 features[] = name
@@ -71,11 +69,12 @@ features[] = primary_links
 features[] = secondary_links
 
 ; Set the default settings to be used in theme-settings.php
-settings[zen_block_editing]        = 0
-settings[zen_breadcrumb]           = yes
+settings[zen_block_editing] = 0
+settings[zen_breadcrumb] = yes
 settings[zen_breadcrumb_separator] = ' › '
-settings[zen_breadcrumb_home]      = 1
-settings[zen_breadcrumb_trailing]  = 1
-settings[zen_breadcrumb_title]     = 0
-settings[zen_rebuild_registry]     = 0
-settings[zen_wireframes]           = 0
+settings[zen_breadcrumb_home] = 1
+settings[zen_breadcrumb_trailing] = 1
+settings[zen_breadcrumb_title] = 0
+settings[zen_rebuild_registry] = 0
+settings[zen_wireframes] = 0
+
