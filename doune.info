@@ -2,21 +2,20 @@ name = Doune
 description = OpenSourcery base theme.
 screenshot = screenshot.png
 core = 7.x
-base theme = zen
+base theme = boron 
 version = 7.x-2.x-dev
 
-stylesheets[all][] = css/layout.css
-stylesheets[all][] = css/html5.css
 
 ; stylesheets[handheld][] = css/mobile.css
 ; stylesheets[only screen and (max-device-width: 480px)][] = css/iphone.css
 
+stylesheets[screen][] = css/layout.css
 scripts[] = js/search-box-text.js
 
 regions[sidebar_first] = First sidebar
 regions[sidebar_second] = Second sidebar
 regions[navigation] = Navigation bar
-regions[highlight] = Highlighted content
+regions[highlighted] = Highlighted content
 regions[content_top] = Content top
 regions[content] = Content
 regions[content_bottom] = Content bottom
