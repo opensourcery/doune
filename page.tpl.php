@@ -109,7 +109,7 @@
 <hr />
 
 <div id="main-wrapper"><div id="main" class="clearfix<?php if ($main_menu) { print ' with-navigation'; } ?>">
-
+<div class='main_image'><img src='/sites/all/themes/doune/images/main_content_image.jpg' height='405' width='979' title='The YMCA is fun!' /></div>
 <div id="content" class="column" role="main"><div class="section">
   <?php if ($page['highlighted']): ?>
     <div id="highlighted"><?php print render($page['highlighted']); ?></div>
