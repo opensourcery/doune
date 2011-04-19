@@ -127,12 +127,13 @@ body {
 }
 #block-system-main-menu ul /* Primary and secondary links */ {
   text-align: center; /* LTR */
-	background: url('../images/nav_bg.png') repeat-x 0 44px #0087ce;
+	background: url('../images/nav_bg.png') repeat-x 0 0 #0087ce;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 	height: 45px;
 }
-#block-system-main-menu li.leaf /* A simple method to get navigation links to appear in one line. */ {
+#block-system-main-menu li.leaf,
+#block-system-main-menu li.expanded /* A simple method to get navigation links to appear in one line. */ {
   width: 193px;
 	float: left; /* LTR */
 	margin: 0;
@@ -168,8 +169,70 @@ body {
 } 
 
 #block-system-main-menu a:hover {
-	background: url('../images/nav_bg.png') repeat-x 0 0px #019d8e;
+	background: url('../images/nav_bg.png') repeat-x 0 45px #019d8e;
 }
+
+/*
+ * Mega-DropDown SubNav
+ */
+
+#block-system-main-menu li.expanded:hover ul.menu {
+	display: block;
+}
+
+#block-system-main-menu li.expanded ul.menu {
+	width: 100%;
+	padding-top: 1px;
+	background: none;
+	display: none;
+	position: absolute;
+	left: 0;
+	text-align: left;
+	z-index: 100;
+}
+	#block-system-main-menu li.expanded ul.menu li {
+		width: 153px;
+		padding-left: 10px;
+		position: relative;
+		background: url('../images/dropdown_bg.png') repeat-x;
+		border-left: none;
+	}
+	
+			#block-system-main-menu li.expanded ul.menu li a {
+				background: url("../images/dropdown_image_1.png") no-repeat scroll center bottom transparent;
+				padding-bottom: 107px;
+			}
+
+			#block-system-main-menu li.expanded ul.menu li a:hover {
+				//background: none;
+				text-decoration: underline;
+			}
+			
+				#block-system-main-menu li.expanded ul.menu li ul.menu {
+					padding-top: 0;	
+				}
+
+				#block-system-main-menu li.expanded ul.menu li ul.menu li {
+					padding: 10px 0 10px 10px;
+					line-height: 12px;
+				}
+
+				#block-system-main-menu li.expanded ul.menu li ul.menu li.first {
+					padding: 15px 0 10px 10px;
+				}
+
+				#block-system-main-menu li.expanded ul.menu li ul.menu li.last {
+					padding: 10px 0 20px 10px;
+				}
+
+				
+					#block-system-main-menu li.expanded ul.menu li ul.menu a {
+						font-size: 12px;
+						background: none;
+						padding-bottom: 0;
+					}
+
+
 
 
 /*
@@ -212,6 +275,31 @@ body {
 		-moz-border-radius: 10px 10px 0 0;
 		border-radius: 10px 10px 0 0;
 	}	
+
+	.breadcrumb {
+		height: 48px;
+	}
+
+	.breadcrumb a {
+		display: block;
+		padding: 0 18px;
+		float: left;
+		color: #FFF;
+		line-height: 48px;
+		text-align: center;
+		border-right: 1px solid #FFF;	
+	}
+
+	.breadcrumb a:first-child {
+		padding: 0 30px;
+		background: url('../images/home_icon.png') no-repeat center center;
+		text-indent: -9999px;
+	}
+
+	.breadcrumb a:last-child {
+		background: url('../images/b_arrow.gif') no-repeat center top;
+		border: none;
+	}
 
 	#block-menu-menu-secondary-navigation-footer {
 	
