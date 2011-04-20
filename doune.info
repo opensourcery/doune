@@ -10,6 +10,7 @@ version = 7.x-2.x-dev
 ; stylesheets[only screen and (max-device-width: 480px)][] = css/iphone.css
 
 stylesheets[screen][] = css/layout.css
+stylesheets[screen][] = css/colors.css
 scripts[] = js/search-box-text.js
 
 regions[sidebar_first] = First sidebar
@@ -23,17 +24,3 @@ regions[header] = Header
 regions[postscript] = Postscript
 regions[footer] = Footer
 regions[page_closure] = Page closure
-
-features[] = logo
-features[] = name
-features[] = slogan
-features[] = mission
-features[] = node_user_picture
-features[] = comment_user_picture
-features[] = search
-features[] = favicon
-features[] = primary_links
-features[] = secondary_links
-
-
-

@@ -109,7 +109,15 @@
 <hr />
 
 <div id="main-wrapper"><div id="main" class="clearfix<?php if ($main_menu) { print ' with-navigation'; } ?>">
+<?php if ($main_menu): ?>
+  <hr />
+  <nav id="navigation" role="navigation"><div class="section">
+    <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('links', 'clearfix')), 'heading' => t('Main menu'))); ?>
+  </div></nav> <!-- /.section, /#navigation -->
+<?php endif; ?>
+
 <div class='main_image'><img src='/sites/all/themes/doune/images/main_content_image.jpg' height='405' width='979' title='The YMCA is fun!' /></div>
+
 <div id="content" class="column" role="main"><div class="section">
   <?php if ($page['highlighted']): ?>
     <div id="highlighted"><?php print render($page['highlighted']); ?></div>
@@ -130,13 +138,6 @@
   <?php print render($page['content']); ?>
   <?php print $feed_icons; ?>
 </div></div> <!-- /.section, /#content -->
-
-<?php if ($main_menu): ?>
-  <hr />
-  <nav id="navigation" role="navigation"><div class="section">
-    <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('links', 'clearfix')), 'heading' => t('Main menu'))); ?>
-  </div></nav> <!-- /.section, /#navigation -->
-<?php endif; ?>
 
 <?php if ($page['sidebar_first']): ?>
   <hr />
@@ -169,3 +170,4 @@
 </div></footer> <!-- /.section, /#footer -->
 
 </div></div> <!-- /#page, /#page-wrapper -->
+<div id="body_bottom_bg"></div>
