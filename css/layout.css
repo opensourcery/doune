@@ -308,12 +308,16 @@ form#search-form div.form-wrapper input.form-submit {
 				display: block;
 				color: #fff;
 				padding: 9px 0 9px 15px;
+				text-transform: capitalize;
+				font-size: 18px;
 			}
 
 				#sidebar-first ul.menu li ul li a {
 					display: block;
 					color: #0066b2;
 					padding: 9px 0 9px 25px;
+					text-transform: none;
+					font-size: 16px;
 				}
 
 					#sidebar-first ul.menu li ul li ul li a {
@@ -359,7 +363,8 @@ form#search-form div.form-wrapper input.form-submit {
 	}	
 
 	.breadcrumb {
-	
+		height: 48px;
+		padding: 0;	
 	}
 
 	.breadcrumb a {
@@ -384,7 +389,7 @@ form#search-form div.form-wrapper input.form-submit {
 	}
 
 	#block-menu-menu-secondary-navigation-footer {
-	
+		margin: 36px 0 0 18px;	
 	}
 
 	#block-menu-menu-secondary-navigation-footer ul {
