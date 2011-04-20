@@ -222,7 +222,7 @@ form#search-form div.form-wrapper input.form-submit {
 		width: 153px;
 		padding-left: 10px;
 		position: relative;
-		background: url('../images/dropdown_bg.png') repeat-x;
+		background: url('../images/dropdown_bg.png') repeat-x #13AEA5;
 		border-left: none;
 	}
 	
@@ -244,12 +244,18 @@ form#search-form div.form-wrapper input.form-submit {
 					line-height: 12px;
 				}
 
+				#block-system-main-menu li.expanded ul.menu li.last ul.menu li,
+			 #block-system-main-menu li.expanded ul.menu li.last ul.menu li.last {
+					border-right: none;
+				} 
+
 				#block-system-main-menu li.expanded ul.menu li ul.menu li.first {
 					padding: 15px 0 10px 10px;
 				}
 
 				#block-system-main-menu li.expanded ul.menu li ul.menu li.last {
 					padding: 10px 0 20px 10px;
+					border-right: 1px solid #C4E5F4;
 				}
 
 				
@@ -280,28 +286,50 @@ form#search-form div.form-wrapper input.form-submit {
 	#sidebar-first ul.menu {
 		width: 180px;
 	}
+	
+	 	#sidebar-first ul.menu li ul li,
+		#sidebar-first ul.menu li ul li ul li	{
+			background-color: #d2f2f2;
+			border-top: 1px solid #fff;
+			border-radius: 0;
+			-moz-border-radius: none;	
+		}
 
 		#sidebar-first ul.menu li {
 			margin: 0;
-			background-color: #d2f2f2;
-			border-top: 1px solid #fff;
-			border-bottom: 1px solid #fff;
-		}
-
-		#sidebar-first ul.menu li.first {
+			padding: 0;
 			background-color: #0060AF;
 			border-top: none;
-			border-radius: 5px 5px 0 0;
-			-moz-border-radius: 5px 5px 0 0;
+			border-radius: 15px 15px 0 0;
+			-moz-border-radius: 15px 15px 0 0;
 		}
 
-			#sidebar-first ul.menu li.first a{
+			#sidebar-first ul.menu li a{
+				display: block;
 				color: #fff;
+				padding: 9px 0 9px 15px;
 			}
 
-				#sidebar-first ul.menu {
-					
+				#sidebar-first ul.menu li ul li a {
+					display: block;
+					color: #0066b2;
+					padding: 9px 0 9px 25px;
 				}
+
+					#sidebar-first ul.menu li ul li ul li a {
+						padding: 9px 0 9px 35px;
+					}
+
+					#sidebar-first ul.menu li ul li a:hover {
+						background-color: #009c8b;
+						color: #FFF;
+					}
+
+					#sidebar-first ul.menu li ul li a:active {
+						background-color: #FFF;
+					}
+
+					
 
 
 /*
@@ -331,7 +359,7 @@ form#search-form div.form-wrapper input.form-submit {
 	}	
 
 	.breadcrumb {
-		height: 48px;
+	
 	}
 
 	.breadcrumb a {
