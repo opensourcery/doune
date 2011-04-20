@@ -277,6 +277,33 @@ form#search-form div.form-wrapper input.form-submit {
   padding: 0;
 }
 
+	#sidebar-first ul.menu {
+		width: 180px;
+	}
+
+		#sidebar-first ul.menu li {
+			margin: 0;
+			background-color: #d2f2f2;
+			border-top: 1px solid #fff;
+			border-bottom: 1px solid #fff;
+		}
+
+		#sidebar-first ul.menu li.first {
+			background-color: #0060AF;
+			border-top: none;
+			border-radius: 5px 5px 0 0;
+			-moz-border-radius: 5px 5px 0 0;
+		}
+
+			#sidebar-first ul.menu li.first a{
+				color: #fff;
+			}
+
+				#sidebar-first ul.menu {
+					
+				}
+
+
 /*
  * Second sidebar
  */
