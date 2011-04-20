@@ -381,3 +381,16 @@ form#search-form div.form-wrapper input.form-submit {
 		color: #C4E5F4;
 		border: 1px solid #C4E5F4;
 	}
+
+	html.js fieldset.collapsible .fieldset-legend {
+		background: url('../images/d_arrow.png') no-repeat 5px 65%;
+		padding-left: 15px;
+	}
+
+	html.js fieldset.collapsed .fieldset-legend {
+		background: url('../images/r_arrow.png') no-repeat 5px 50%;
+	}
+
+	label {
+		color: #0064B1;
+	}
