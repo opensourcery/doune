@@ -104,6 +104,11 @@
   <p id="skip-link"><em><a href="#navigation">Skip to Navigation</a></em> &darr;</p> 
 <?php endif; ?>
 
+<nav id="secondary-navigation"><div class="section">
+    <?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary-menu', 'class' => array('links', 'clearfix')), 'heading' => t('Secondary menu'))); ?>
+</div></nav> <!-- /.section, /#navigation -->
+
+
 </div></header> <!-- /.section, /#header -->
 
 <hr />
@@ -161,9 +166,6 @@
 	<?php if ($breadcrumb): ?>
     <div id="breadcrumb"><?php print $breadcrumb; ?></div>
   <?php endif; ?>
-  <nav id="secondary-navigation"><div class="section">
-    <?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary-menu', 'class' => array('links', 'clearfix')), 'heading' => t('Secondary menu'))); ?>
-  </div></nav> <!-- /.section, /#navigation -->
 
 <?php print render($page['footer']); ?>
 
