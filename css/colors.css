@@ -115,6 +115,10 @@ form#search-form div.form-wrapper input.form-submit {
 	border-right: 1px solid #FFF;
 }
 
+.breadcrumb a:hover {
+	background-color: #0292DB;
+}
+
 	.breadcrumb a:first-child {
 		background: url('../images/home_icon.png') no-repeat center center;
 	}

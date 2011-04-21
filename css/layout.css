@@ -23,19 +23,19 @@ body {
  * Global/Resets
  */
 
-	ul {
+ul {
 	margin: 0;
 	padding: 0;
 }
 
-	li {
-		display: block;
-		list-style: none;
-	}
+li {
+	display: block;
+	list-style: none;
+}
 
-	a {
-		text-decoration: none;	
-	}
+a {
+	text-decoration: none;	
+}
 /*
  * Layout styles adapted from Zen
  */
@@ -103,12 +103,37 @@ form#search-form div.form-wrapper input.form-search {
 
 form#search-block-form input.form-submit,
 form#search-form div.form-wrapper input.form-submit {
+	position: absolute;
 	border: none;
-	position: relative;
-	top: 0;
-	right: 25px;
+	top: 8px;
+	right: 8px;
 	text-indent: -9999px;
 }
+
+form#search-form div.form-wrapper input.form-submit {
+	position: relative;
+	top: 0px;
+	right: 25px;
+}
+
+/*
+ * Account Navigation
+ */
+
+#secondary-navigation {
+	position: absolute;
+	right: 0;
+	bottom: 15px;
+}
+
+	#secondary-navigation li {
+		display: inline;
+		margin: 0 10px 0 0;
+	}
+
+		#secondary-navigation a:hover {
+			text-decoration: underline;
+		}
 
 
 /*
@@ -236,6 +261,15 @@ nav h2,
 						background: none;
 						padding-bottom: 0;
 					}
+
+
+/*
+ * Main Content
+ */
+
+#main-wrapper {
+	padding: 0 0 35px 0;
+}
 
 /*
  * First sidebar
