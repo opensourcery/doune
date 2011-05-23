@@ -37,6 +37,8 @@ stylesheets[all][] = "taxonomy.css"
 stylesheets[all][] = "tracker.css"
 stylesheets[all][] = "update.css"
 stylesheets[all][] = "user.css"
+
+; Formalize's form styles
 stylesheets[all][] = "formalize/stylesheets/formalize.css"
 
 ; Drupal essential styles (adapted from tao)
