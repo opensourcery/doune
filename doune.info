@@ -8,6 +8,9 @@ version = 7.x-2.x-dev
 ; stylesheets[handheld][] = css/mobile.css
 ; stylesheets[only screen and (max-device-width: 480px)][] = css/iphone.css
 
+; Formalize's form styles
+stylesheets[all][] = "formalize/stylesheets/formalize.css"
+
 stylesheets[screen][] = css/layout.css
 stylesheets[screen][] = css/colors.css
 scripts[] = js/search-box-text.js
