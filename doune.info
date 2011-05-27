@@ -2,7 +2,6 @@ name = Doune
 description = OpenSourcery base theme.
 screenshot = screenshot.png
 core = 7.x
-base theme = boron 
 version = 7.x-2.x-dev
 
 
