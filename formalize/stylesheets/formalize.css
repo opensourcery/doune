@@ -155,9 +155,7 @@ textarea.placeholder_text {
 }
 
 button:focus,
-button:active,
 input:focus,
-input:active,
 select:focus,
 select:active,
 textarea:focus,
@@ -168,6 +166,12 @@ textarea:active {
 
   /* for Opera */
   z-index: 1;
+}
+button:active,
+input:active {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 input[type="file"]:focus,
