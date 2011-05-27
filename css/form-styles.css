@@ -13,8 +13,6 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-  background: #eee;
-  /* Old browsers */
   background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
   /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.2)), color-stop(100%, rgba(0, 0, 0, 0.2)));
@@ -40,12 +38,12 @@ input[type="button"] {
   border-radius: 3px;
   display: inline-block;
   font-weight: bold;
-  padding: 4px 12px;
+  padding: 3px 12px 4px;
   text-decoration: none;
   text-shadow: 0 1px rgba(255, 255, 255, 0.75);
 }
 
-/* line 46, ../scss/form-styles.scss */
+/* line 45, ../scss/form-styles.scss */
 a.button:hover,
 button:hover,
 input[type="submit"]:hover,
@@ -71,7 +69,7 @@ input[type="button"]:hover {
   color: #222;
 }
 
-/* line 64, ../scss/form-styles.scss */
+/* line 63, ../scss/form-styles.scss */
 a.button:active,
 button:active,
 input[type="submit"]:active,
@@ -96,7 +94,7 @@ input[type="button"]:active {
   border-right: 1px solid #aaa;
 }
 
-/* line 81, ../scss/form-styles.scss */
+/* line 80, ../scss/form-styles.scss */
 .button.full-width,
 button.full-width,
 input[type="submit"].full-width,
