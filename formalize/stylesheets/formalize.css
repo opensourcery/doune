@@ -43,6 +43,7 @@
 
 ::-moz-focus-inner {
   border: 0;
+  padding: 0;
 }
 
 input[type="search"]::-webkit-search-decoration {
@@ -53,9 +54,6 @@ input,
 button,
 select,
 textarea {
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding;
-  background-clip: padding-box;
   margin: 0;
   vertical-align: middle;
 }
@@ -67,6 +65,9 @@ input[type="button"] {
   -webkit-appearance: none;
   -moz-border-radius: 11px;
   -webkit-border-radius: 11px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
   border-radius: 11px;
   background: #ddd url(../images/button.png) repeat-x;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(1, #ddd));
@@ -93,13 +94,6 @@ button {
   *padding-bottom: 1px;
 }
 
-button[disabled],
-input[type="reset"][disabled],
-input[type="submit"][disabled],
-input[type="button"][disabled] {
-  color: #888;
-}
-
 textarea,
 select,
 input[type="date"],
@@ -122,6 +116,9 @@ input[type="week"] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
   background-color: #fff;
   border: 1px solid;
   border-color: #848484 #c1c1c1 #e1e1e1;
@@ -140,35 +137,20 @@ input[type="week"] {
 
 /*
   Separate rule for Firefox.
+  Separate rule for IE, too.
   Cannot stack with WebKit's.
 */
-input.placeholder_text,
-textarea.placeholder_text,
+::-webkit-input-placeholder {
+  color: #888;
+}
+
 input:-moz-placeholder,
 textarea:-moz-placeholder {
   color: #888;
 }
 
-::-webkit-input-placeholder {
-  color: #888;
-}
-
-textarea[disabled],
-select[disabled],
-input[type="date"][disabled],
-input[type="datetime"][disabled],
-input[type="datetime-local"][disabled],
-input[type="email"][disabled],
-input[type="month"][disabled],
-input[type="number"][disabled],
-input[type="password"][disabled],
-input[type="search"][disabled],
-input[type="tel"][disabled],
-input[type="text"][disabled],
-input[type="time"][disabled],
-input[type="url"][disabled],
-input[type="week"][disabled] {
-  background-color: #eee;
+input.placeholder_text,
+textarea.placeholder_text {
   color: #888;
 }
 
@@ -199,23 +181,60 @@ input[type="checkbox"]:active {
   box-shadow: none;
 }
 
-.is_webkit select {
-  /* Tweaks for Safari + Chrome. */
-  background-image: url(../images/select_arrow.gif);
-  background-repeat: no-repeat;
-  background-position: right center;
-  padding-right: 20px;
+select[disabled],
+textarea[disabled],
+input[type="date"][disabled],
+input[type="datetime"][disabled],
+input[type="datetime-local"][disabled],
+input[type="email"][disabled],
+input[type="month"][disabled],
+input[type="number"][disabled],
+input[type="password"][disabled],
+input[type="search"][disabled],
+input[type="tel"][disabled],
+input[type="text"][disabled],
+input[type="time"][disabled],
+input[type="url"][disabled],
+input[type="week"][disabled] {
+  background-color: #eee;
+}
+
+button[disabled],
+input[disabled],
+select[disabled],
+select[disabled] option,
+select[disabled] optgroup,
+textarea[disabled] {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  color: #888;
+  cursor: default;
 }
 
 textarea,
+select[size],
 select[multiple] {
   height: auto;
 }
 
-select[multiple],
-.is_webkit select[multiple] {
-  background-image: none;
-  padding: 0;
+/* Tweaks for Safari + Chrome. */
+@media (-webkit-min-device-pixel-ratio: 0) {
+  select {
+    background-image: url(../images/select_arrow.gif);
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 20px;
+  }
+
+  select[size],
+  select[multiple] {
+    background-image: none;
+    padding: 0;
+  }
 }
 
 textarea {
