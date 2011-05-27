@@ -63,12 +63,9 @@ input[type="reset"],
 input[type="submit"],
 input[type="button"] {
   -webkit-appearance: none;
-  -moz-border-radius: 11px;
-  -webkit-border-radius: 11px;
   -moz-background-clip: padding;
   -webkit-background-clip: padding;
   background-clip: padding-box;
-  border-radius: 11px;
   background: #ddd url(../images/button.png) repeat-x;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(1, #ddd));
   background: -moz-linear-gradient(top center, #fff 0%, #ddd 100%);
