@@ -7,6 +7,14 @@ input[type="tel"], input[type="text"], input[type="time"], input[type="url"],
 input[type="week"] {
 }
 
+input[type="checkbox"], input[type="radio"] {
+  vertical-align: baseline;
+}
+
+.form-item {
+  margin-bottom: 1em;
+}
+
 .container-inline label {
   vertical-align: middle;
 }
