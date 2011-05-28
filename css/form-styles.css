@@ -9,7 +9,12 @@ input[type="checkbox"], input[type="radio"] {
   margin-bottom: 1em;
 }
 
-/* line 18, ../scss/form-styles.scss */
+/* line 17, ../scss/form-styles.scss */
+.form-item.form-type-radio {
+  margin-bottom: 0;
+}
+
+/* line 21, ../scss/form-styles.scss */
 .container-inline label {
   vertical-align: middle;
 }
@@ -17,7 +22,7 @@ input[type="checkbox"], input[type="radio"] {
 /**
  * Button styling adapted from Skeleton framework (http://www.getskeleton.com)
  */
-/* line 29, ../scss/form-styles.scss */
+/* line 32, ../scss/form-styles.scss */
 a.button,
 button,
 input[type="submit"],
@@ -53,7 +58,7 @@ input[type="button"] {
   text-shadow: 0 1px rgba(255, 255, 255, 0.75);
 }
 
-/* line 53, ../scss/form-styles.scss */
+/* line 56, ../scss/form-styles.scss */
 a.button:hover,
 button:hover,
 input[type="submit"]:hover,
@@ -79,7 +84,7 @@ input[type="button"]:hover {
   color: #222;
 }
 
-/* line 71, ../scss/form-styles.scss */
+/* line 74, ../scss/form-styles.scss */
 a.button:active,
 button:active,
 input[type="submit"]:active,
@@ -104,7 +109,7 @@ input[type="button"]:active {
   border-right: 1px solid #aaa;
 }
 
-/* line 88, ../scss/form-styles.scss */
+/* line 91, ../scss/form-styles.scss */
 .button.full-width,
 button.full-width,
 input[type="submit"].full-width,
