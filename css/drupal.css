@@ -353,8 +353,13 @@ html.js .js-hide { display:none; }
  */
 html.js fieldset.collapsed {
   border-bottom-width: 0;
-  border-left-width: 0;
-  border-right-width: 0;
+  /*
+   * Rather than Drupal core's 'border-left-width: 0;' here, which causes a
+   * horizontal bobbing when opening and closing fieldsets (due to the width
+   * changing), use transparent borders.
+   */
+  border-left-color: transparent;
+  border-right-color: transparent;
   height: 1em;
 }
 html.js fieldset.collapsed .fieldset-wrapper {
