@@ -21,6 +21,9 @@ input[type="checkbox"], input[type="radio"] {
 .container-inline label {
   vertical-align: middle;
 }
+label {
+  cursor: pointer;
+}
 
 /**
  * Button styling adapted from Skeleton framework (http://www.getskeleton.com)
