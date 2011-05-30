@@ -11,6 +11,7 @@ version = 7.x-2.x-dev
 stylesheets[all][] = "css/reset.css"
 stylesheets[all][] = "formalize/stylesheets/formalize.css"
 stylesheets[all][] = "css/drupal.css"
+stylesheets[all][] = "css/doune.css"
 stylesheets[all][] = "css/form-styles.css"
 
 scripts[] = formalize/javascripts/jquery.formalize.js
