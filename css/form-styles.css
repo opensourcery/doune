@@ -1,25 +1,25 @@
 @charset "UTF-8";
-/* line 10, ../scss/form-styles.scss */
+/* line 10, ../sass/form-styles.scss */
 input[type="checkbox"], input[type="radio"] {
   vertical-align: baseline;
 }
 
-/* line 14, ../scss/form-styles.scss */
+/* line 14, ../sass/form-styles.scss */
 .form-item {
   margin-bottom: 1em;
 }
 
-/* line 17, ../scss/form-styles.scss */
+/* line 17, ../sass/form-styles.scss */
 .form-item.form-type-radio {
   margin-bottom: 0;
 }
 
-/* line 21, ../scss/form-styles.scss */
+/* line 21, ../sass/form-styles.scss */
 .container-inline label {
   vertical-align: middle;
 }
 
-/* line 24, ../scss/form-styles.scss */
+/* line 24, ../sass/form-styles.scss */
 label {
   cursor: pointer;
 }
@@ -27,7 +27,7 @@ label {
 /**
  * Button styling adapted from Skeleton framework (http://www.getskeleton.com)
  */
-/* line 35, ../scss/form-styles.scss */
+/* line 35, ../sass/form-styles.scss */
 a.button,
 button,
 input[type="submit"],
@@ -63,7 +63,7 @@ input[type="button"] {
   text-shadow: 0 1px rgba(255, 255, 255, 0.75);
 }
 
-/* line 59, ../scss/form-styles.scss */
+/* line 59, ../sass/form-styles.scss */
 a.button:hover,
 button:hover,
 input[type="submit"]:hover,
@@ -89,7 +89,7 @@ input[type="button"]:hover {
   color: #222;
 }
 
-/* line 77, ../scss/form-styles.scss */
+/* line 77, ../sass/form-styles.scss */
 a.button:active,
 button:active,
 input[type="submit"]:active,
@@ -114,7 +114,7 @@ input[type="button"]:active {
   border-right: 1px solid #aaa;
 }
 
-/* line 94, ../scss/form-styles.scss */
+/* line 94, ../sass/form-styles.scss */
 .button.full-width,
 button.full-width,
 input[type="submit"].full-width,
