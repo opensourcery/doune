@@ -85,6 +85,37 @@ function doune_preprocess_html(&$vars) {
 }
 
 /**
+ * Preprocesses variables for page template.
+ */
+function doune_preprocess_page(&$vars) {
+  $vars['main_menu_rendered'] = theme('links__system_main_menu', array(
+    'links' => $vars['main_menu'],
+    'attributes' => array(
+      'id' => 'main-menu',
+      'class' => array('links', 'inline', 'clearfix'),
+    ),
+    'heading' => array(
+      'text' => t('Main menu'),
+      'level' => 'h2',
+      'class' => array('element-invisible'),
+    ),
+  ));
+
+  $vars['secondary_menu_rendered'] = theme('links__system_secondary_menu', array(
+    'links' => $vars['secondary_menu'],
+    'attributes' => array(
+      'id' => 'secondary-menu',
+      'class' => array('links', 'inline', 'clearfix'),
+    ),
+    'heading' => array(
+      'text' => t('Secondary menu'),
+      'level' => 'h2',
+      'class' => array('element-invisible'),
+    ),
+  ));
+}
+
+/**
  * Changes the search form to use the "search" input element of HTML5.
  */
 function doune_preprocess_search_block_form(&$vars) {
