@@ -13,6 +13,7 @@ stylesheets[all][] = "formalize/stylesheets/formalize.css"
 stylesheets[all][] = "css/drupal.css"
 stylesheets[all][] = "css/doune.css"
 stylesheets[all][] = "css/form-styles.css"
+stylesheets[all][] = "css/grid.css"
 
 scripts[] = formalize/javascripts/jquery.formalize.js
 scripts[] = js/search-box-text.js
