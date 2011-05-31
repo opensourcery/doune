@@ -51,7 +51,7 @@
 
     <div id="main-wrapper" class="clearfix">
 
-      <div role="main">
+      <div role="main" class="<?php print $main_classes; ?>">
         <?php print render($page['highlighted']); ?>
         <a id="main-content"></a>
         <?php print render($title_prefix); ?>

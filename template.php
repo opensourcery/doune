@@ -113,8 +113,9 @@ function doune_preprocess_page(&$vars) {
       'class' => array('element-invisible'),
     ),
   ));
-  $vars['header_banner_classes'] = 'alpha omega sixteen columns';
-  $vars['navigation_wrapper_classes'] = 'alpha omega sixteen columns';
+  $vars['header_banner_classes'] = 'sixteen columns';
+  $vars['main_classes'] = 'eight columns';
+  $vars['navigation_wrapper_classes'] = 'sixteen columns';
 }
 
 /**
@@ -122,9 +123,8 @@ function doune_preprocess_page(&$vars) {
  */
 function doune_preprocess_region(&$vars) {
   $grid = array(
-    'content' => array('alpha', 'eight', 'columns'),
     'sidebar_first' => array('four', 'columns'),
-    'sidebar_second' => array('omega', 'four', 'columns'),
+    'sidebar_second' => array('four', 'columns'),
   );
 
   if (isset($grid[$vars['region']])) {
