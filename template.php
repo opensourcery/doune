@@ -113,6 +113,23 @@ function doune_preprocess_page(&$vars) {
       'class' => array('element-invisible'),
     ),
   ));
+  $vars['header_banner_classes'] = 'alpha omega sixteen columns';
+  $vars['navigation_wrapper_classes'] = 'alpha omega sixteen columns';
+}
+
+/**
+ * Preprocesses variables for regions.
+ */
+function doune_preprocess_region(&$vars) {
+  $grid = array(
+    'content' => array('alpha', 'eight', 'columns'),
+    'sidebar_first' => array('four', 'columns'),
+    'sidebar_second' => array('omega', 'four', 'columns'),
+  );
+
+  if (isset($grid[$vars['region']])) {
+    $vars['classes_array'] = array_merge($vars['classes_array'], $grid[$vars['region']]);
+  }
 }
 
 /**

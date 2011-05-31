@@ -6,9 +6,9 @@
  */
 ?>
 
-  <div id="page">
+  <div id="page" class="container">
 
-    <header role="banner" class="clearfix">
+    <header role="banner" class="<?php print $header_banner_classes; ?>">
 
       <?php if ($logo): ?>
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
@@ -34,16 +34,18 @@
 
     </header> <!-- /header -->
 
-    <?php if ($main_menu || $secondary_menu): ?>
-      <nav role="navigation">
-        <?php print $main_menu_rendered; ?>
-        <?php print $secondary_menu_rendered; ?>
-      </nav> <!-- /nav -->
-    <?php endif; ?>
+    <div id="navigation-wrapper" class="<?php print $navigation_wrapper_classes; ?>">
+      <?php if ($main_menu || $secondary_menu): ?>
+        <nav role="navigation">
+          <?php print $main_menu_rendered; ?>
+          <?php print $secondary_menu_rendered; ?>
+        </nav> <!-- /nav -->
+      <?php endif; ?>
 
-    <?php if ($breadcrumb): ?>
-      <nav id="breadcrumb"><?php print $breadcrumb; ?></nav>
-    <?php endif; ?>
+      <?php if ($breadcrumb): ?>
+        <nav id="breadcrumb"><?php print $breadcrumb; ?></nav>
+      <?php endif; ?>
+    </div>
 
     <?php print $messages; ?>
 
