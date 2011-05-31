@@ -14,7 +14,9 @@ stylesheets[all][] = "css/doune.css"
 stylesheets[all][] = "formalize/stylesheets/formalize.css"
 stylesheets[all][] = "css/form-styles.css"
 stylesheets[all][] = "css/grid.css"
-stylesheets[all][] = "css/link-icons.css"
+
+; Optional: Add file-extension-specific icons after anchor tags
+; stylesheets[all][] = "css/link-icons.css"
 
 scripts[] = formalize/javascripts/jquery.formalize.js
 scripts[] = js/search-box-text.js
