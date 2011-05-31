@@ -9,9 +9,9 @@ version = 7.x-2.x-dev
 ; stylesheets[only screen and (max-device-width: 480px)][] = css/iphone.css
 
 stylesheets[all][] = "css/reset.css"
-stylesheets[all][] = "formalize/stylesheets/formalize.css"
 stylesheets[all][] = "css/drupal.css"
 stylesheets[all][] = "css/doune.css"
+stylesheets[all][] = "formalize/stylesheets/formalize.css"
 stylesheets[all][] = "css/form-styles.css"
 stylesheets[all][] = "css/grid.css"
 stylesheets[all][] = "css/link-icons.css"
