@@ -113,23 +113,54 @@ function doune_preprocess_page(&$vars) {
       'class' => array('element-invisible'),
     ),
   ));
-  $vars['header_banner_classes'] = 'sixteen columns';
-  $vars['main_classes'] = 'eight columns';
-  $vars['navigation_wrapper_classes'] = 'sixteen columns';
+
+  $vars['title_tabs_content_wrapper_classes'] = implode(' ', _doune_region_classes('title_tabs_content'));
+}
+
+/**
+ * Determines classes for a region wrapper based on current layout.
+ */
+function _doune_region_classes($region) {
+  static $layout = '';
+  $layouts = _doune_layouts();
+
+  // determine the layout
+  if (empty($layout)) {
+    $layout = 'default';
+    if (module_exists('context_layouts')) {
+      $layout = context_layouts_get_active_layout();
+    }
+  }
+
+  return isset($layouts[$layout][$region]) ? $layouts[$layout][$region] : array();
+}
+
+/**
+ * Returns all Doune layouts registered by modules and themes.
+ */
+function _doune_layouts() {
+  static $layouts = array();
+  if (empty($layouts)) {
+    // We supply default layout
+    $layouts = array(
+      'default' => array(
+        'title_tabs_content' => array('eight', 'columns', 'push-by-four'),
+        'sidebar_first' => array('four', 'columns', 'pull-by-four'),
+        'sidebar_second' => array('four', 'columns', 'offset-by-twelve', 'pull-by-sixteen'),
+      ),
+    );
+
+    // Give other extensions a chance to add and modify layouts
+    drupal_alter('doune_layouts', $layouts);
+  }
+  return $layouts;
 }
 
 /**
  * Preprocesses variables for regions.
  */
 function doune_preprocess_region(&$vars) {
-  $grid = array(
-    'sidebar_first' => array('four', 'columns'),
-    'sidebar_second' => array('four', 'columns'),
-  );
-
-  if (isset($grid[$vars['region']])) {
-    $vars['classes_array'] = array_merge($vars['classes_array'], $grid[$vars['region']]);
-  }
+  $vars['classes_array'] = array_merge($vars['classes_array'], _doune_region_classes($vars['region']));
 }
 
 /**

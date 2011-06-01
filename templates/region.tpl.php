@@ -6,7 +6,9 @@
  */
 ?>
 <?php if ($content): ?>
-  <section id="<?php print $region; ?>" class="<?php print $classes; ?>">
-    <?php print $content; ?>
-  </section>
+  <div id="<?php print $region; ?>-wrapper" class="<?php print $classes; ?>">
+    <section id="<?php print $region; ?>">
+      <?php print $content; ?>
+    </section>
+  </div>
 <?php endif; ?>

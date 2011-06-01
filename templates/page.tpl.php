@@ -8,7 +8,7 @@
 
   <div id="page" class="container">
 
-    <header role="banner" class="<?php print $header_banner_classes; ?>">
+    <header id="header" role="banner">
 
       <?php if ($logo): ?>
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
@@ -30,43 +30,46 @@
         </hgroup> <!-- /#name-and-slogan -->
       <?php endif; ?>
 
+      <?php print $secondary_menu_rendered; ?>
+
       <?php print render($page['header']); ?>
 
     </header> <!-- /header -->
 
-    <div id="navigation-wrapper" class="<?php print $navigation_wrapper_classes; ?>">
-      <?php if ($main_menu || $secondary_menu): ?>
-        <nav role="navigation">
-          <?php print $main_menu_rendered; ?>
-          <?php print $secondary_menu_rendered; ?>
-        </nav> <!-- /nav -->
-      <?php endif; ?>
-
-      <?php if ($breadcrumb): ?>
-        <nav id="breadcrumb"><?php print $breadcrumb; ?></nav>
-      <?php endif; ?>
-    </div>
-
     <?php print $messages; ?>
 
-    <div id="main-wrapper" class="clearfix">
+    <div id="main-wrapper">
 
-      <div role="main" class="<?php print $main_classes; ?>">
+      <div id="main" role="main" class="clearfix">
         <?php print render($page['highlighted']); ?>
-        <a id="main-content"></a>
-        <?php print render($title_prefix); ?>
-        <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
-        <?php print render($title_suffix); ?>
-        <?php if ($tabs = render($tabs)): ?><div class="tabs"><?php print $tabs; ?></div><?php endif; ?>
-        <?php print render($page['help']); ?>
-        <?php if ($action_links = render($action_links)): ?><ul class="action-links"><?php print $action_links; ?></ul><?php endif; ?>
-        <?php print render($page['content']); ?>
-        <?php print $feed_icons; ?>
+        <?php if ($breadcrumb): ?>
+          <nav id="breadcrumb"><?php print $breadcrumb; ?></nav>
+        <?php endif; ?>
+
+        <div id="title-tabs-content-wrapper" class="<?php print $title_tabs_content_wrapper_classes; ?>">
+          <?php print render($title_prefix); ?>
+          <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
+          <?php print render($title_suffix); ?>
+          <?php if ($tabs = render($tabs)): ?><div class="tabs"><?php print $tabs; ?></div><?php endif; ?>
+          <?php print render($page['help']); ?>
+          <?php if ($action_links = render($action_links)): ?><ul class="action-links"><?php print $action_links; ?></ul><?php endif; ?>
+          <a id="main-content"></a>
+          <?php print render($page['content']); ?>
+          <?php print $feed_icons; ?>
+        </div>
+
+        <?php if ($page['navigation'] || $main_menu): ?>
+          <nav id="nav" role="navigation">
+            <?php print $main_menu_rendered; ?>
+            <?php print render($page['navigation']); ?>
+          </nav> <!-- /nav -->
+        <?php endif; ?>
+
+        <?php print render($page['sidebar_first']); ?>
+
+        <?php print render($page['sidebar_second']); ?>
+
       </div> <!-- /main -->
-
-      <?php print render($page['sidebar_first']); ?>
-
-      <?php print render($page['sidebar_second']); ?>
 
     </div> <!-- /#main -->
 
