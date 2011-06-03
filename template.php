@@ -141,12 +141,17 @@ function _doune_region_classes($region) {
 function _doune_layouts() {
   static $layouts = array();
   if (empty($layouts)) {
-    // We supply default layout
+    // We supply default layouts
     $layouts = array(
       'default' => array(
-        'title_tabs_content' => array('eight', 'columns', 'push-by-four'),
         'sidebar_first' => array('four', 'columns', 'pull-by-four'),
+        'title_tabs_content' => array('eight', 'columns', 'push-by-four'),
         'sidebar_second' => array('four', 'columns', 'offset-by-twelve', 'pull-by-sixteen'),
+      ),
+      'thin_and_thick' => array(
+        'sidebar_first' => array('three', 'columns', 'pull-by-three'),
+        'title_tabs_content' => array('eight', 'columns', 'push-by-three'),
+        'sidebar_second' => array('five', 'columns', 'offset-by-eleven', 'pull-by-sixteen'),
       ),
     );
 
