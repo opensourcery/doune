@@ -127,11 +127,10 @@ function _doune_region_classes($region) {
   // determine the layout
   if (empty($layout)) {
     $layout = 'default';
-    if (module_exists('context_layouts')) {
-      $layout = context_layouts_get_active_layout();
+    if (module_exists('context_layouts') && ($layout_info = context_layouts_get_active_layout())) {
+      $layout = $layout_info['layout'];
     }
   }
-
   return isset($layouts[$layout][$region]) ? $layouts[$layout][$region] : array();
 }
 
