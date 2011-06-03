@@ -71,6 +71,7 @@ function doune_html_head_alter(&$head_elements) {
  */
 function doune_preprocess_html(&$vars) {
   // Borrowed from AdaptiveTheme
+  $vars['rdf'] = new stdClass();
   if (module_exists('rdf')) {
     $vars['doctype'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD HTML+RDFa 1.1//EN">' . "\n";
     $vars['rdf']->version = ' version="HTML+RDFa 1.1"';
