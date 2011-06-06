@@ -8,559 +8,560 @@
   padding: 0;
 }
 
-/* line 7, ../sass/grid.scss */
+/* line 12, ../sass/grid.scss */
 .column, .columns {
   float: left;
   display: inline;
+  position: relative;
   margin-left: 10px;
   margin-right: 10px;
 }
 
-/* line 8, ../sass/grid.scss */
+/* line 19, ../sass/grid.scss */
 .row {
   margin-bottom: 20px;
 }
 
 /* Nested Column Classes */
-/* line 11, ../sass/grid.scss */
+/* line 22, ../sass/grid.scss */
 .column.alpha, .columns.alpha {
   margin-left: 0;
 }
 
-/* line 12, ../sass/grid.scss */
+/* line 23, ../sass/grid.scss */
 .column.omega, .columns.omega {
   margin-right: 0;
 }
 
 /* Base Grid */
-/* line 15, ../sass/grid.scss */
+/* line 26, ../sass/grid.scss */
 .container .one.column {
   width: 40px;
 }
 
-/* line 16, ../sass/grid.scss */
+/* line 27, ../sass/grid.scss */
 .container .two.columns {
   width: 100px;
 }
 
-/* line 17, ../sass/grid.scss */
+/* line 28, ../sass/grid.scss */
 .container .three.columns {
   width: 160px;
 }
 
-/* line 18, ../sass/grid.scss */
+/* line 29, ../sass/grid.scss */
 .container .four.columns {
   width: 220px;
 }
 
-/* line 19, ../sass/grid.scss */
+/* line 30, ../sass/grid.scss */
 .container .five.columns {
   width: 280px;
 }
 
-/* line 20, ../sass/grid.scss */
+/* line 31, ../sass/grid.scss */
 .container .six.columns {
   width: 340px;
 }
 
-/* line 21, ../sass/grid.scss */
+/* line 32, ../sass/grid.scss */
 .container .seven.columns {
   width: 400px;
 }
 
-/* line 22, ../sass/grid.scss */
+/* line 33, ../sass/grid.scss */
 .container .eight.columns {
   width: 460px;
 }
 
-/* line 23, ../sass/grid.scss */
+/* line 34, ../sass/grid.scss */
 .container .nine.columns {
   width: 520px;
 }
 
-/* line 24, ../sass/grid.scss */
+/* line 35, ../sass/grid.scss */
 .container .ten.columns {
   width: 580px;
 }
 
-/* line 25, ../sass/grid.scss */
+/* line 36, ../sass/grid.scss */
 .container .eleven.columns {
   width: 640px;
 }
 
-/* line 26, ../sass/grid.scss */
+/* line 37, ../sass/grid.scss */
 .container .twelve.columns {
   width: 700px;
 }
 
-/* line 27, ../sass/grid.scss */
+/* line 38, ../sass/grid.scss */
 .container .thirteen.columns {
   width: 760px;
 }
 
-/* line 28, ../sass/grid.scss */
+/* line 39, ../sass/grid.scss */
 .container .fourteen.columns {
   width: 820px;
 }
 
-/* line 29, ../sass/grid.scss */
+/* line 40, ../sass/grid.scss */
 .container .fifteen.columns {
   width: 880px;
 }
 
-/* line 30, ../sass/grid.scss */
+/* line 41, ../sass/grid.scss */
 .container .sixteen.columns {
   width: 940px;
 }
 
-/* line 32, ../sass/grid.scss */
+/* line 43, ../sass/grid.scss */
 .container .one-third.column {
   width: 300px;
 }
 
-/* line 33, ../sass/grid.scss */
+/* line 44, ../sass/grid.scss */
 .container .two-thirds.column {
   width: 620px;
 }
 
 /* Offsets */
-/* line 36, ../sass/grid.scss */
+/* line 47, ../sass/grid.scss */
 .container .offset-by-one {
   margin-left: 60px;
 }
 
-/* line 37, ../sass/grid.scss */
+/* line 48, ../sass/grid.scss */
 .container .offset-by-two {
   margin-left: 120px;
 }
 
-/* line 38, ../sass/grid.scss */
+/* line 49, ../sass/grid.scss */
 .container .offset-by-three {
   margin-left: 180px;
 }
 
-/* line 39, ../sass/grid.scss */
+/* line 50, ../sass/grid.scss */
 .container .offset-by-four {
   margin-left: 240px;
 }
 
-/* line 40, ../sass/grid.scss */
+/* line 51, ../sass/grid.scss */
 .container .offset-by-five {
   margin-left: 300px;
 }
 
-/* line 41, ../sass/grid.scss */
+/* line 52, ../sass/grid.scss */
 .container .offset-by-six {
   margin-left: 360px;
 }
 
-/* line 42, ../sass/grid.scss */
+/* line 53, ../sass/grid.scss */
 .container .offset-by-seven {
   margin-left: 420px;
 }
 
-/* line 43, ../sass/grid.scss */
+/* line 54, ../sass/grid.scss */
 .container .offset-by-eight {
   margin-left: 480px;
 }
 
-/* line 44, ../sass/grid.scss */
+/* line 55, ../sass/grid.scss */
 .container .offset-by-nine {
   margin-left: 540px;
 }
 
-/* line 45, ../sass/grid.scss */
+/* line 56, ../sass/grid.scss */
 .container .offset-by-ten {
   margin-left: 600px;
 }
 
-/* line 46, ../sass/grid.scss */
+/* line 57, ../sass/grid.scss */
 .container .offset-by-eleven {
   margin-left: 660px;
 }
 
-/* line 47, ../sass/grid.scss */
+/* line 58, ../sass/grid.scss */
 .container .offset-by-twelve {
   margin-left: 720px;
 }
 
-/* line 48, ../sass/grid.scss */
+/* line 59, ../sass/grid.scss */
 .container .offset-by-thirteen {
   margin-left: 780px;
 }
 
-/* line 49, ../sass/grid.scss */
+/* line 60, ../sass/grid.scss */
 .container .offset-by-fourteen {
   margin-left: 840px;
 }
 
-/* line 50, ../sass/grid.scss */
+/* line 61, ../sass/grid.scss */
 .container .offset-by-fifteen {
   margin-left: 900px;
 }
 
-/* Push */
-/* line 53, ../sass/grid.scss */
-.container .push-by-one {
-  margin-left: 60px;
-  margin-right: -900px;
-}
-
-/* line 54, ../sass/grid.scss */
-.container .push-by-two {
-  margin-left: 120px;
-  margin-right: -840px;
-}
-
-/* line 55, ../sass/grid.scss */
-.container .push-by-three {
-  margin-left: 180px;
-  margin-right: -780px;
-}
-
-/* line 56, ../sass/grid.scss */
-.container .push-by-four {
-  margin-left: 240px;
-  margin-right: -720px;
-}
-
-/* line 57, ../sass/grid.scss */
-.container .push-by-five {
-  margin-left: 300px;
-  margin-right: -660px;
-}
-
-/* line 58, ../sass/grid.scss */
-.container .push-by-six {
-  margin-left: 360px;
-  margin-right: -600px;
-}
-
-/* line 59, ../sass/grid.scss */
-.container .push-by-seven {
-  margin-left: 420px;
-  margin-right: -540px;
-}
-
-/* line 60, ../sass/grid.scss */
-.container .push-by-eight {
-  margin-left: 480px;
-  margin-right: -480px;
-}
-
-/* line 61, ../sass/grid.scss */
-.container .push-by-nine {
-  margin-left: 540px;
-  margin-right: -420px;
-}
-
-/* line 62, ../sass/grid.scss */
-.container .push-by-ten {
-  margin-left: 600px;
-  margin-right: -360px;
-}
-
-/* line 63, ../sass/grid.scss */
-.container .push-by-eleven {
-  margin-left: 660px;
-  margin-right: -300px;
-}
-
-/* line 64, ../sass/grid.scss */
-.container .push-by-twelve {
-  margin-left: 720px;
-  margin-right: -240px;
-}
-
-/* line 65, ../sass/grid.scss */
-.container .push-by-thirteen {
-  margin-left: 780px;
-  margin-right: -180px;
-}
-
-/* line 66, ../sass/grid.scss */
-.container .push-by-fourteen {
-  margin-left: 840px;
-  margin-right: -120px;
-}
-
-/* line 67, ../sass/grid.scss */
-.container .push-by-fifteen {
-  margin-left: 900px;
-  margin-right: -60px;
-}
-
-/* Pull */
-/* line 70, ../sass/grid.scss */
-.container .pull-by-one {
-  margin-right: -60px;
-}
-
-/* line 71, ../sass/grid.scss */
-.container .pull-by-two {
-  margin-right: -120px;
-}
-
-/* line 72, ../sass/grid.scss */
-.container .pull-by-three {
-  margin-right: -180px;
-}
-
-/* line 73, ../sass/grid.scss */
-.container .pull-by-four {
-  margin-right: -240px;
-}
-
-/* line 74, ../sass/grid.scss */
-.container .pull-by-five {
-  margin-right: -300px;
-}
-
-/* line 75, ../sass/grid.scss */
-.container .pull-by-six {
-  margin-right: -360px;
-}
-
-/* line 76, ../sass/grid.scss */
-.container .pull-by-seven {
-  margin-right: -420px;
-}
-
-/* line 77, ../sass/grid.scss */
-.container .pull-by-eight {
-  margin-right: -480px;
-}
-
+/* Push and pull */
 /* line 78, ../sass/grid.scss */
-.container .pull-by-nine {
-  margin-right: -540px;
+.push-by-one, .pull-by-one,
+.push-by-two, .pull-by-two,
+.push-by-three, .pull-by-three,
+.push-by-four, .pull-by-five,
+.push-by-six, .pull-by-six,
+.push-by-seven, .pull-by-seven,
+.push-by-eight, .pull-by-eight,
+.push-by-nine, .pull-by-nine,
+.push-by-ten, .pull-by-ten,
+.push-by-eleven, .pull-by-eleven,
+.push-by-twelve, .pull-by-twelve,
+.push-by-thirteen, .pull-by-thirteen,
+.push-by-fourteen, .pull-by-fourteen,
+.push-by-fifteen, .pull-by-fifteen,
+.push-by-sixteen, .pull-by-sixteen {
+  position: relative;
 }
 
-/* line 79, ../sass/grid.scss */
-.container .pull-by-ten {
-  margin-right: -600px;
-}
-
-/* line 80, ../sass/grid.scss */
-.container .pull-by-eleven {
-  margin-right: -660px;
-}
-
-/* line 81, ../sass/grid.scss */
-.container .pull-by-twelve {
-  margin-right: -720px;
-}
-
-/* line 82, ../sass/grid.scss */
-.container .pull-by-thirteen {
-  margin-right: -780px;
-}
-
+/* Push */
 /* line 83, ../sass/grid.scss */
-.container .pull-by-fourteen {
-  margin-right: -840px;
+.container .push-by-one {
+  left: 60px;
 }
 
 /* line 84, ../sass/grid.scss */
-.container .pull-by-fifteen {
-  margin-right: -900px;
+.container .push-by-two {
+  left: 120px;
 }
 
 /* line 85, ../sass/grid.scss */
-.container .pull-by-sixteen {
-  margin-right: -960px;
+.container .push-by-three {
+  left: 180px;
+}
+
+/* line 86, ../sass/grid.scss */
+.container .push-by-four {
+  left: 240px;
+}
+
+/* line 87, ../sass/grid.scss */
+.container .push-by-five {
+  left: 300px;
+}
+
+/* line 88, ../sass/grid.scss */
+.container .push-by-six {
+  left: 360px;
+}
+
+/* line 89, ../sass/grid.scss */
+.container .push-by-seven {
+  left: 420px;
+}
+
+/* line 90, ../sass/grid.scss */
+.container .push-by-eight {
+  left: 480px;
+}
+
+/* line 91, ../sass/grid.scss */
+.container .push-by-nine {
+  left: 540px;
+}
+
+/* line 92, ../sass/grid.scss */
+.container .push-by-ten {
+  left: 600px;
+}
+
+/* line 93, ../sass/grid.scss */
+.container .push-by-eleven {
+  left: 660px;
+}
+
+/* line 94, ../sass/grid.scss */
+.container .push-by-twelve {
+  left: 720px;
+}
+
+/* line 95, ../sass/grid.scss */
+.container .push-by-thirteen {
+  left: 780px;
+}
+
+/* line 96, ../sass/grid.scss */
+.container .push-by-fourteen {
+  left: 840px;
+}
+
+/* line 97, ../sass/grid.scss */
+.container .push-by-fifteen {
+  left: 900px;
+}
+
+/* Pull */
+/* line 100, ../sass/grid.scss */
+.container .pull-by-one {
+  left: -60px;
+}
+
+/* line 101, ../sass/grid.scss */
+.container .pull-by-two {
+  left: -120px;
+}
+
+/* line 102, ../sass/grid.scss */
+.container .pull-by-three {
+  left: -180px;
+}
+
+/* line 103, ../sass/grid.scss */
+.container .pull-by-four {
+  left: -240px;
+}
+
+/* line 104, ../sass/grid.scss */
+.container .pull-by-five {
+  left: -300px;
+}
+
+/* line 105, ../sass/grid.scss */
+.container .pull-by-six {
+  left: -360px;
+}
+
+/* line 106, ../sass/grid.scss */
+.container .pull-by-seven {
+  left: -420px;
+}
+
+/* line 107, ../sass/grid.scss */
+.container .pull-by-eight {
+  left: -480px;
+}
+
+/* line 108, ../sass/grid.scss */
+.container .pull-by-nine {
+  left: -540px;
+}
+
+/* line 109, ../sass/grid.scss */
+.container .pull-by-ten {
+  left: -600px;
+}
+
+/* line 110, ../sass/grid.scss */
+.container .pull-by-eleven {
+  left: -660px;
+}
+
+/* line 111, ../sass/grid.scss */
+.container .pull-by-twelve {
+  left: -720px;
+}
+
+/* line 112, ../sass/grid.scss */
+.container .pull-by-thirteen {
+  left: -780px;
+}
+
+/* line 113, ../sass/grid.scss */
+.container .pull-by-fourteen {
+  left: -840px;
+}
+
+/* line 114, ../sass/grid.scss */
+.container .pull-by-fifteen {
+  left: -900px;
 }
 
 /* #Tablet (Portrait)
 ================================================== */
 /* Note: Design for a width of 768px */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-  /* line 93, ../sass/grid.scss */
+  /* line 122, ../sass/grid.scss */
   .container {
     width: 768px;
   }
 
-  /* line 95, ../sass/grid.scss */
+  /* line 124, ../sass/grid.scss */
   .container .column,
   .container .columns {
     margin-left: 10px;
     margin-right: 10px;
   }
 
-  /* line 96, ../sass/grid.scss */
+  /* line 125, ../sass/grid.scss */
   .column.alpha, .columns.alpha {
     margin-left: 0;
     margin-right: 10px;
   }
 
-  /* line 97, ../sass/grid.scss */
+  /* line 126, ../sass/grid.scss */
   .column.omega, .columns.omega {
     margin-right: 0;
     margin-left: 10px;
   }
 
-  /* line 99, ../sass/grid.scss */
+  /* line 128, ../sass/grid.scss */
   .container .one.column {
     width: 28px;
   }
 
-  /* line 100, ../sass/grid.scss */
+  /* line 129, ../sass/grid.scss */
   .container .two.columns {
     width: 76px;
   }
 
-  /* line 101, ../sass/grid.scss */
+  /* line 130, ../sass/grid.scss */
   .container .three.columns {
     width: 124px;
   }
 
-  /* line 102, ../sass/grid.scss */
+  /* line 131, ../sass/grid.scss */
   .container .four.columns {
     width: 172px;
   }
 
-  /* line 103, ../sass/grid.scss */
+  /* line 132, ../sass/grid.scss */
   .container .five.columns {
     width: 220px;
   }
 
-  /* line 104, ../sass/grid.scss */
+  /* line 133, ../sass/grid.scss */
   .container .six.columns {
     width: 268px;
   }
 
-  /* line 105, ../sass/grid.scss */
+  /* line 134, ../sass/grid.scss */
   .container .seven.columns {
     width: 316px;
   }
 
-  /* line 106, ../sass/grid.scss */
+  /* line 135, ../sass/grid.scss */
   .container .eight.columns {
     width: 364px;
   }
 
-  /* line 107, ../sass/grid.scss */
+  /* line 136, ../sass/grid.scss */
   .container .nine.columns {
     width: 412px;
   }
 
-  /* line 108, ../sass/grid.scss */
+  /* line 137, ../sass/grid.scss */
   .container .ten.columns {
     width: 460px;
   }
 
-  /* line 109, ../sass/grid.scss */
+  /* line 138, ../sass/grid.scss */
   .container .eleven.columns {
     width: 508px;
   }
 
-  /* line 110, ../sass/grid.scss */
+  /* line 139, ../sass/grid.scss */
   .container .twelve.columns {
     width: 556px;
   }
 
-  /* line 111, ../sass/grid.scss */
+  /* line 140, ../sass/grid.scss */
   .container .thirteen.columns {
     width: 604px;
   }
 
-  /* line 112, ../sass/grid.scss */
+  /* line 141, ../sass/grid.scss */
   .container .fourteen.columns {
     width: 652px;
   }
 
-  /* line 113, ../sass/grid.scss */
+  /* line 142, ../sass/grid.scss */
   .container .fifteen.columns {
     width: 700px;
   }
 
-  /* line 114, ../sass/grid.scss */
+  /* line 143, ../sass/grid.scss */
   .container .sixteen.columns {
     width: 748px;
   }
 
-  /* line 116, ../sass/grid.scss */
+  /* line 145, ../sass/grid.scss */
   .container .one-third.column {
     width: 236px;
   }
 
-  /* line 117, ../sass/grid.scss */
+  /* line 146, ../sass/grid.scss */
   .container .two-thirds.column {
     width: 492px;
   }
 
   /* Offsets */
-  /* line 120, ../sass/grid.scss */
+  /* line 149, ../sass/grid.scss */
   .container .offset-by-one {
     padding-left: 48px;
   }
 
-  /* line 121, ../sass/grid.scss */
+  /* line 150, ../sass/grid.scss */
   .container .offset-by-two {
     padding-left: 96px;
   }
 
-  /* line 122, ../sass/grid.scss */
+  /* line 151, ../sass/grid.scss */
   .container .offset-by-three {
     padding-left: 144px;
   }
 
-  /* line 123, ../sass/grid.scss */
+  /* line 152, ../sass/grid.scss */
   .container .offset-by-four {
     padding-left: 192px;
   }
 
-  /* line 124, ../sass/grid.scss */
+  /* line 153, ../sass/grid.scss */
   .container .offset-by-five {
     padding-left: 288px;
   }
 
-  /* line 125, ../sass/grid.scss */
+  /* line 154, ../sass/grid.scss */
   .container .offset-by-six {
     padding-left: 336px;
   }
 
-  /* line 126, ../sass/grid.scss */
+  /* line 155, ../sass/grid.scss */
   .container .offset-by-seven {
     padding-left: 348px;
   }
 
-  /* line 127, ../sass/grid.scss */
+  /* line 156, ../sass/grid.scss */
   .container .offset-by-eight {
     padding-left: 432px;
   }
 
-  /* line 128, ../sass/grid.scss */
+  /* line 157, ../sass/grid.scss */
   .container .offset-by-nine {
     padding-left: 480px;
   }
 
-  /* line 129, ../sass/grid.scss */
+  /* line 158, ../sass/grid.scss */
   .container .offset-by-ten {
     padding-left: 528px;
   }
 
-  /* line 130, ../sass/grid.scss */
+  /* line 159, ../sass/grid.scss */
   .container .offset-by-eleven {
     padding-left: 576px;
   }
 
-  /* line 131, ../sass/grid.scss */
+  /* line 160, ../sass/grid.scss */
   .container .offset-by-twelve {
     padding-left: 624px;
   }
 
-  /* line 132, ../sass/grid.scss */
+  /* line 161, ../sass/grid.scss */
   .container .offset-by-thirteen {
     padding-left: 672px;
   }
 
-  /* line 133, ../sass/grid.scss */
+  /* line 162, ../sass/grid.scss */
   .container .offset-by-fourteen {
     padding-left: 720px;
   }
 
-  /* line 134, ../sass/grid.scss */
+  /* line 163, ../sass/grid.scss */
   .container .offset-by-fifteen {
     padding-left: 900px;
   }
@@ -570,17 +571,17 @@
 ================================================== */
 /* Note: Design for a width of 320px */
 @media only screen and (max-width: 767px) {
-  /* line 144, ../sass/grid.scss */
+  /* line 173, ../sass/grid.scss */
   .container {
     width: 300px;
   }
 
-  /* line 145, ../sass/grid.scss */
+  /* line 174, ../sass/grid.scss */
   .columns, .column {
     margin: 0;
   }
 
-  /* line 164, ../sass/grid.scss */
+  /* line 193, ../sass/grid.scss */
   .container .one.column,
   .container .two.columns,
   .container .three.columns,
@@ -603,7 +604,7 @@
   }
 
   /* Offsets */
-  /* line 181, ../sass/grid.scss */
+  /* line 210, ../sass/grid.scss */
   .container .offset-by-one,
   .container .offset-by-two,
   .container .offset-by-three,
@@ -627,17 +628,17 @@
 ================================================== */
 /* Note: Design for a width of 480px */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 192, ../sass/grid.scss */
+  /* line 221, ../sass/grid.scss */
   .container {
     width: 420px;
   }
 
-  /* line 193, ../sass/grid.scss */
+  /* line 222, ../sass/grid.scss */
   .columns, .column {
     margin: 0;
   }
 
-  /* line 212, ../sass/grid.scss */
+  /* line 241, ../sass/grid.scss */
   .container .one.column,
   .container .two.columns,
   .container .three.columns,
