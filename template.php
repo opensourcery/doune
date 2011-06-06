@@ -122,25 +122,32 @@ function doune_preprocess_page(&$vars) {
  * Determines classes for a region wrapper based on current layout.
  */
 function _doune_region_classes($region) {
-  static $layout = '';
   $layouts = _doune_layouts();
+  $layout = doune_active_layout();
+  return isset($layouts[$layout][$region]) ? $layouts[$layout][$region] : array();
+}
 
+/**
+ * Retrieves the name of the currently active layout.
+ */
+function doune_active_layout() {
+  static $layout;
   // determine the layout
-  if (empty($layout)) {
+  if (!isset($layout)) {
     $layout = 'default';
     if (module_exists('context_layouts') && ($layout_info = context_layouts_get_active_layout())) {
       $layout = $layout_info['layout'];
     }
   }
-  return isset($layouts[$layout][$region]) ? $layouts[$layout][$region] : array();
+  return $layout;
 }
 
 /**
  * Returns all Doune layouts registered by modules and themes.
  */
 function _doune_layouts() {
-  static $layouts = array();
-  if (empty($layouts)) {
+  static $layouts;
+  if (!isset($layouts)) {
     // We supply default layouts
     $layouts = array(
       'default' => array(
