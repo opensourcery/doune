@@ -144,14 +144,14 @@ function _doune_layouts() {
     // We supply default layouts
     $layouts = array(
       'default' => array(
-        'sidebar_first' => array('four', 'columns', 'pull-by-four'),
         'title_tabs_content' => array('eight', 'columns', 'push-by-four'),
-        'sidebar_second' => array('four', 'columns', 'offset-by-twelve', 'pull-by-sixteen'),
+        'sidebar_first' => array('four', 'columns', 'pull-by-eight'),
+        'sidebar_second' => array('four', 'columns'),
       ),
       'thin_and_thick' => array(
-        'sidebar_first' => array('three', 'columns', 'pull-by-three'),
         'title_tabs_content' => array('eight', 'columns', 'push-by-three'),
-        'sidebar_second' => array('five', 'columns', 'offset-by-eleven', 'pull-by-sixteen'),
+        'sidebar_first' => array('three', 'columns', 'pull-by-eight'),
+        'sidebar_second' => array('five', 'columns'),
       ),
     );
 
