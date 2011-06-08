@@ -4,12 +4,16 @@
 @import "compass/css3/inline-block";
 @import "compass/css3/text-shadow";
 
+// See http://compass-style.org/reference/compass/typography/lists/bullets/
+@import "compass/utilities/lists/bullets";
+
 // See http://compass-style.org/reference/compass/utilities/
 @import "compass/utilities/general/clearfix";
 @import "compass/utilities/general/float";
 @import "compass/utilities/general/min";
 
 // See http://compass-style.org/reference/compass/typography/
+@import "compass/utilities/links/hover-link";
 @import "compass/utilities/links/link-colors";
 @import "compass/utilities/text/ellipsis";
 @import "compass/utilities/text/replacement";
