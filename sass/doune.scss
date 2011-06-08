@@ -6,6 +6,14 @@
 html, body, #page { height: 100%; }
 
 /**
+ * Accessibility
+ */
+// Hide from screenreaders. TODO: Test this!
+@media reader {
+  .sighted-only { display: none; }
+}
+
+/**
  * From Bartik
  */
 #header,
