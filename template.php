@@ -115,6 +115,7 @@ function doune_preprocess_page(&$vars) {
     ),
   ));
 
+  $vars['classes_array'][] = 'container';
   $vars['title_tabs_content_wrapper_classes'] = implode(' ', _doune_region_classes('title_tabs_content'));
 }
 

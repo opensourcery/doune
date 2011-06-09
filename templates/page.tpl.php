@@ -6,7 +6,7 @@
  */
 ?>
 
-  <div id="page" class="container">
+  <div id="page" class="<?php print $classes; ?>">
 
     <header id="header" role="banner">
 
