@@ -101,6 +101,9 @@ function doune_preprocess_html(&$vars) {
     $vars['rdf']->namespaces = '';
     $vars['rdf']->profile = '';
   }
+
+  // Add a class for the current layout
+  $vars['classes_array'][] = drupal_html_class('layout-' . doune_active_layout());
 }
 
 /**
