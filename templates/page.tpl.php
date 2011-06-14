@@ -48,7 +48,7 @@
 
         <div id="title-tabs-content-wrapper" class="<?php print $title_tabs_content_wrapper_classes; ?>">
           <?php print render($title_prefix); ?>
-          <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
+          <?php if ($title): ?><h1 id="page-title" class="<?php print $title_classes; ?>"<?php print $title_attributes; ?>><?php print $title; ?></h1><?php endif; ?>
           <?php print render($title_suffix); ?>
           <?php if ($tabs = render($tabs)): ?><div class="tabs"><?php print $tabs; ?></div><?php endif; ?>
           <?php print render($page['help']); ?>

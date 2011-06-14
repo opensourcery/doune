@@ -136,8 +136,20 @@ function doune_preprocess_page(&$vars) {
     ),
   ));
 
+  // Allow modules and subthemes to easily modify the page title element's classes
+  $vars['title_classes_array'] = array();
+  $vars['title_classes_array'][] = 'title';
+
   $vars['classes_array'][] = 'container';
   $vars['title_tabs_content_wrapper_classes'] = implode(' ', _doune_region_classes('title_tabs_content'));
+}
+
+/**
+ * Process page variables as late as possible.
+ */
+function doune_process_page(&$vars) {
+  // Flatten title classes.
+  $vars['title_classes'] = implode(' ', $vars['title_classes_array']);
 }
 
 /**
