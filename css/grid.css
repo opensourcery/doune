@@ -594,7 +594,7 @@
 
   /* line 171, ../sass/grid.scss */
   .container .push-by-six {
-    left: 488px;
+    left: 288px;
   }
 
   /* line 172, ../sass/grid.scss */
@@ -670,7 +670,7 @@
 
   /* line 188, ../sass/grid.scss */
   .container .pull-by-six {
-    left: -488px;
+    left: -288px;
   }
 
   /* line 189, ../sass/grid.scss */
