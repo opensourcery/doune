@@ -17,9 +17,28 @@ html, body, #page {
 }
 
 /**
+ * Boxes
+ */
+/* line 19, ../sass/doune.scss */
+.boxes-box fieldset {
+  color: black;
+  padding-top: 0;
+}
+/* line 23, ../sass/doune.scss */
+.boxes-box fieldset .filter-help,
+.boxes-box fieldset .filter-guidelines {
+  display: none;
+}
+/* line 24, ../sass/doune.scss */
+.boxes-box fieldset .fieldset-wrapper {
+  padding: 0;
+  margin: 0;
+}
+
+/**
  * From Bartik
  */
-/* line 29, ../sass/doune.scss */
+/* line 43, ../sass/doune.scss */
 #header,
 #footer-wrapper,
 #skip-link,
@@ -34,7 +53,7 @@ table,
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 33, ../sass/doune.scss */
+/* line 47, ../sass/doune.scss */
 fieldset {
   background: #ffffff;
   border: 1px solid #cccccc;
@@ -50,17 +69,17 @@ fieldset {
   border-radius: 4px;
 }
 
-/* line 46, ../sass/doune.scss */
+/* line 60, ../sass/doune.scss */
 .fieldset-wrapper {
   margin-top: 25px;
 }
 
-/* line 49, ../sass/doune.scss */
+/* line 63, ../sass/doune.scss */
 .node-form .vertical-tabs .fieldset-wrapper {
   margin-top: 0;
 }
 
-/* line 52, ../sass/doune.scss */
+/* line 66, ../sass/doune.scss */
 .filter-wrapper {
   top: 0;
   padding: 1em 0 0.2em;
@@ -74,28 +93,28 @@ fieldset {
   border-top-right-radius: 0;
 }
 
-/* line 64, ../sass/doune.scss */
+/* line 78, ../sass/doune.scss */
 .filter-help a {
   font-size: 0.857em;
   padding: 2px 20px 0;
 }
 
-/* line 68, ../sass/doune.scss */
+/* line 82, ../sass/doune.scss */
 .filter-wrapper .form-item label {
   margin-right: 10px;
 }
 
-/* line 71, ../sass/doune.scss */
+/* line 85, ../sass/doune.scss */
 .filter-wrapper .form-item {
   padding: 0 0 0.5em 0.5em;
 }
 
-/* line 74, ../sass/doune.scss */
+/* line 88, ../sass/doune.scss */
 .filter-guidelines {
   padding: 0 1.5em 0 0.5em;
 }
 
-/* line 77, ../sass/doune.scss */
+/* line 91, ../sass/doune.scss */
 fieldset.collapsed {
   background: transparent;
   -khtml-border-radius: 0;
@@ -104,7 +123,7 @@ fieldset.collapsed {
   border-radius: 0;
 }
 
-/* line 84, ../sass/doune.scss */
+/* line 98, ../sass/doune.scss */
 fieldset legend {
   background: #dbdbdb;
   border: 1px solid #ccc;
@@ -132,7 +151,7 @@ fieldset legend {
   border-top-right-radius: 4px;
 }
 
-/* line 109, ../sass/doune.scss */
+/* line 123, ../sass/doune.scss */
 fieldset.collapsed legend {
   -khtml-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -140,24 +159,24 @@ fieldset.collapsed legend {
   border-radius: 4px;
 }
 
-/* line 115, ../sass/doune.scss */
+/* line 129, ../sass/doune.scss */
 fieldset legend a {
   color: #3b3b3b;
 }
 
-/* line 120, ../sass/doune.scss */
+/* line 134, ../sass/doune.scss */
 fieldset legend a:hover,
 fieldset legend a:focus,
 fieldset legend a:active {
   color: #000;
 }
 
-/* line 123, ../sass/doune.scss */
+/* line 137, ../sass/doune.scss */
 fieldset .fieldset-wrapper {
   padding: 0 10px;
 }
 
-/* line 126, ../sass/doune.scss */
+/* line 140, ../sass/doune.scss */
 fieldset .fieldset-description {
   margin-top: 5px;
   margin-bottom: 1em;
@@ -166,7 +185,7 @@ fieldset .fieldset-description {
   font-style: italic;
 }
 
-/* line 135, ../sass/doune.scss */
+/* line 149, ../sass/doune.scss */
 .comment-form fieldset.filter-wrapper .fieldset-wrapper,
 .comment-form .text-format-wrapper .form-item {
   margin-top: 0;
