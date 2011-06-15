@@ -19,7 +19,6 @@ stylesheets[all][] = "css/grid.css"
 ; stylesheets[all][] = "css/link-icons.css"
 
 scripts[] = formalize/javascripts/jquery.formalize.js
-scripts[] = js/search-box-text.js
 
 regions[sidebar_first]  = First sidebar
 regions[sidebar_second] = Second sidebar
