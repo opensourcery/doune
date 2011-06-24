@@ -5,6 +5,16 @@
  */
 html, body, #page { height: 100%; }
 
+table {
+  border: 1px solid #CCC;
+  thead th {
+    font-weight: bold;
+  }
+  th, td {
+    padding: 4px 10px;
+  }
+}
+
 /**
  * Accessibility
  */
