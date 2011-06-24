@@ -43,21 +43,6 @@ html, body, #page {
  * From Bartik
  */
 /* line 47, ../sass/doune.scss */
-#header,
-#footer-wrapper,
-#skip-link,
-ul.contextual-links,
-ul.links,
-ul.primary,
-.item-list .pager,
-div.field-type-taxonomy-term-reference,
-div.messages,
-table,
-.breadcrumb {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-/* line 51, ../sass/doune.scss */
 fieldset {
   background: #ffffff;
   border: 1px solid #cccccc;
@@ -137,7 +122,6 @@ fieldset legend {
   height: 2em;
   left: -1px;
   /* LTR */
-  font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
   line-height: 2;
   padding: 0;
   position: absolute;
