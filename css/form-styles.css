@@ -1,25 +1,20 @@
 @charset "UTF-8";
-/* line 33, ../sass/form-styles.scss */
 input[type="checkbox"], input[type="radio"] {
   vertical-align: baseline;
 }
 
-/* line 37, ../sass/form-styles.scss */
 .form-item {
   margin-bottom: 1em;
 }
 
-/* line 40, ../sass/form-styles.scss */
 .form-item.form-type-radio {
   margin-bottom: 0;
 }
 
-/* line 44, ../sass/form-styles.scss */
 .container-inline label {
   vertical-align: middle;
 }
 
-/* line 47, ../sass/form-styles.scss */
 label {
   cursor: pointer;
 }

@@ -1,6 +1,7 @@
 # Require any additional compass plugins here.
 # Set this to the root of your project when deployed:
 http_path = ".."
+line_comments = false
 css_dir = "css"
 sass_dir = "sass"
 images_dir = "images"
