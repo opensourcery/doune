@@ -145,6 +145,28 @@ function doune_preprocess_page(&$vars) {
 }
 
 /**
+ * Preprocesses variables for maintenance page template.
+ */
+function doune_preprocess_maintenance_page(&$vars) {
+  // Add basic classes to achieve minimal layout.
+  $vars['classes_array'][] = 'layout-default';
+  $vars['page_classes_array'][] = 'container';
+  $vars['title_tabs_content_wrapper_classes'] = 'sixteen columns';
+
+  // Create empty variables to mirror normal page template.
+  $vars['main_menu_rendered'] = '';
+  $vars['secondary_menu_rendered'] = '';
+}
+
+/**
+ * Process maintenance page variables as late as possible.
+ */
+function doune_process_maintenance_page(&$vars) {
+  // Flatten page classes.
+  $vars['page_classes'] = implode(' ', $vars['page_classes_array']);
+}
+
+/**
  * Process page variables as late as possible.
  */
 function doune_process_page(&$vars) {

@@ -21,72 +21,76 @@
   <?php print $scripts; ?>
 </head>
 <body class="<?php print $classes; ?>">
-  <div id="page">
-    <div id="header">
-      <div id="logo-title">
+  <div id="page" class="<?php print $page_classes; ?>">
+    <header role="banner">
+      <?php if ($logo): ?>
+        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
+          <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+        </a>
+      <?php endif; ?>
 
-        <?php if (!empty($logo)): ?>
-          <a href="<?php print $base_path; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-            <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-          </a>
-        <?php endif; ?>
-
-        <div id="name-and-slogan">
-          <?php if (!empty($site_name)): ?>
+      <?php if ($site_name || $site_slogan): ?>
+        <hgroup id="name-and-slogan">
+          <?php if ($site_name): ?>
             <h1 id="site-name">
-              <a href="<?php print $base_path ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
+              <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
             </h1>
           <?php endif; ?>
 
-          <?php if (!empty($site_slogan)): ?>
-            <div id="site-slogan"><?php print $site_slogan; ?></div>
+          <?php if ($site_slogan): ?>
+            <h2 id="site-slogan"><?php print $site_slogan; ?></h2>
           <?php endif; ?>
-        </div> <!-- /name-and-slogan -->
-      </div> <!-- /logo-title -->
+        </hgroup> <!-- /#name-and-slogan -->
+      <?php endif; ?>
 
-      <?php if (!empty($header)): ?>
-        <div id="header-region">
-          <?php print $header; ?>
+      <?php print $secondary_menu_rendered; ?>
+
+      <?php print render($header); ?>
+
+    </header> <!-- /header -->
+
+    <?php print $messages; ?>
+
+    <hr class="top" />
+
+    <div id="main-wrapper">
+      <div id="main" role="main" class="clearfix">
+        <?php print render($highlighted); ?>
+
+        <div id="title-tabs-content-wrapper" class="<?php print $title_tabs_content_wrapper_classes; ?>">
+          <?php print render($title_prefix); ?>
+          <?php if ($title): ?><h1 id="page-title" class="<?php print $title_classes; ?>"<?php print $title_attributes; ?>><?php print $title; ?></h1><?php endif; ?>
+          <?php print render($title_suffix); ?>
+          <?php if ($tabs = render($tabs)): ?><div class="tabs"><?php print $tabs; ?></div><?php endif; ?>
+          <?php print render($help); ?>
+          <?php if ($action_links = render($action_links)): ?><ul class="action-links"><?php print $action_links; ?></ul><?php endif; ?>
+          <a id="main-content"></a>
+          <div class="main-content">
+            <?php print render($content_top); ?>
+            <?php print render($content); ?>
+            <?php print render($content_bottom); ?>
+            <?php print $feed_icons; ?>
+          </div>
         </div>
-      <?php endif; ?>
 
-    </div> <!-- /header -->
+        <?php print render($sidebar_first); ?>
 
-    <div id="container" class="clearfix">
+        <?php print render($sidebar_second); ?>
 
-      <?php if (!empty($sidebar_first)): ?>
-        <div id="sidebar-first" class="column sidebar">
-          <?php print $sidebar_first; ?>
-        </div> <!-- /sidebar-first -->
-      <?php endif; ?>
+      </div> <!-- /main -->
+    </div> <!-- /#main -->
 
-      <div id="main" class="column"><div id="main-squeeze">
+    <hr class="bottom" />
 
-        <div id="content">
-          <?php if (!empty($title)): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
-          <?php if (!empty($messages)): print $messages; endif; ?>
-          <div id="content-content" class="clearfix">
-            <?php print $content; ?>
-          </div> <!-- /content-content -->
-        </div> <!-- /content -->
+    <?php if ($navigation || $main_menu): ?>
+      <nav id="nav" role="navigation">
+        <?php print $main_menu_rendered; ?>
+        <?php print render($navigation); ?>
+      </nav> <!-- /nav -->
+    <?php endif; ?>
 
-      </div></div> <!-- /main-squeeze /main -->
+    <?php print render($footer); ?>
 
-      <?php if (!empty($sidebar_second)): ?>
-        <div id="sidebar-second" class="column sidebar">
-          <?php print $sidebar_second; ?>
-        </div> <!-- /sidebar-second -->
-      <?php endif; ?>
-
-    </div> <!-- /container -->
-
-    <div id="footer-wrapper">
-      <div id="footer">
-        <?php if (!empty($footer)): print $footer; endif; ?>
-      </div> <!-- /footer -->
-    </div> <!-- /footer-wrapper -->
-
-  </div> <!-- /page -->
-
+  </div> <!-- /#page -->
 </body>
 </html>
