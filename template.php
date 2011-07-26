@@ -145,6 +145,14 @@ function doune_preprocess_page(&$vars) {
 }
 
 /**
+ * Process page variables as late as possible.
+ */
+function doune_process_page(&$vars) {
+  // Flatten title classes.
+  $vars['title_classes'] = implode(' ', $vars['title_classes_array']);
+}
+
+/**
  * Preprocesses variables for maintenance page template.
  */
 function doune_preprocess_maintenance_page(&$vars) {
@@ -164,14 +172,6 @@ function doune_preprocess_maintenance_page(&$vars) {
 function doune_process_maintenance_page(&$vars) {
   // Flatten page classes.
   $vars['page_classes'] = implode(' ', $vars['page_classes_array']);
-}
-
-/**
- * Process page variables as late as possible.
- */
-function doune_process_page(&$vars) {
-  // Flatten title classes.
-  $vars['title_classes'] = implode(' ', $vars['title_classes_array']);
 }
 
 /**
