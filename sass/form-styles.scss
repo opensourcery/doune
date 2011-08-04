@@ -22,6 +22,9 @@ input[type="week"] {
 //  font-size: 18px;
 }
 
+// Overriding formalize.css button padding because button text is off centered 
+button, input[type="reset"], input[type="submit"], input[type="button"] { padding: 6px 10px 4px; }
+
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -40,7 +43,9 @@ input[type="checkbox"], input[type="radio"] {
 .form-item.form-type-radio {
   margin-bottom: 0;
 }
-
+.form-item.form-type-checkbox {
+  margin-bottom: 0;
+}
 .container-inline label {
   vertical-align: middle;
 }

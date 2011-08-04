@@ -13,6 +13,18 @@ table {
   th, td {
     padding: 4px 10px;
   }
+  th {
+    border-bottom: 2px outset #333;
+  }
+  td {
+    border: 1px solid #d2d2d2;
+  }
+  tr.odd {
+    background: #EEEEEE;
+  }
+  tr.even {
+    background: #FFFFFF;
+  }
 }
 
 /**
@@ -149,3 +161,82 @@ fieldset .fieldset-description {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+.description { 
+  font-size: 0.775em;
+}
+
+/*
+* Vertical Tabs Styling
+*/
+.vertical-tabs {
+  border: 1px solid #d2d2d2;
+  overflow: hidden;
+  padding-left: 200px;
+
+   ul.vertical-tabs-list {
+     width: 200px;
+   }
+    
+     li.vertical-tab-button {
+       border-top: 1px solid #d2d2d2;
+       border-left: 1px solid #d2d2d2;
+       border-right: 1px solid #d2d2d2;
+       background: #eeeeee;
+       margin: 0;
+       text-shadow: 0 1px 0 #fff;
+     }
+     li.vertical-tab-button.first {
+       border-top: none;
+     }
+     li.vertical-tab-button.last {
+       border-bottom: 1px solid #d2d2d2;
+     }
+     li.vertical-tab-button.selected {
+       border-right: #FFF;
+     }
+     li.vertical-tab-button a {
+       text-decoration: none;
+       display: block;
+       padding: 8px;
+     }
+     li.vertical-tab-button.selected {
+       background: #FFFFFF;
+       border-right: 1px solid #fff;
+     }
+     .vertical-tabs-panes {
+     }
+}
+
+
+/*
+* Drupal Messages 
+*/
+
+.messages.status {
+  padding: 5px 8px;
+  background: #DDD;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(1, #DBEDAA));
+  background: -moz-linear-gradient(top center, #fff 0%, #ddd 100%);
+  border: 10px solid #DBEDAA;
+  font-weight: bold;
+}
+
+.messages.warning {
+  padding: 5px 8px;
+  background: #DDD;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(1, #FFC17F));
+  background: -moz-linear-gradient(top center, #fff 0%, #ddd 100%);
+  border: 10px solid #FFC17F;
+  font-weight: bold;
+}
+
+.messages.error {
+  padding: 5px 8px;
+  background: #DDD;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(1, #D85452));
+  background: -moz-linear-gradient(top center, #fff 0%, #ddd 100%);
+  border: 10px solid #D85452;
+  font-weight: bold;
+}
+
